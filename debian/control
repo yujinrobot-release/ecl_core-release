@@ -1,0 +1,12 @@
+Source: ros-groovy-ecl-core-apps
+Section: misc
+Priority: extra
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 7.0.50~), ros-groovy-catkin,ros-groovy-ecl-containers,ros-groovy-ecl-type-traits,ros-groovy-ecl-command-line,ros-groovy-ecl-formatters,ros-groovy-ecl-converters,ros-groovy-ecl-devices,ros-groovy-ecl-streams,ros-groovy-ecl-ipc,ros-groovy-ecl-time-lite,ros-groovy-ecl-config,ros-groovy-ecl-linear-algebra,ros-groovy-ecl-errors,ros-groovy-ecl-sigslots,ros-groovy-ecl-license,ros-groovy-ecl-exceptions,ros-groovy-ecl-geometry
+Homepage: http://wiki.ros.org/ecl_core_apps
+Standards-Version: 3.9.2
+
+Package: ros-groovy-ecl-core-apps
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-groovy-ecl-linear-algebra,ros-groovy-ecl-containers,ros-groovy-ecl-type-traits,ros-groovy-ecl-command-line,ros-groovy-ecl-formatters,ros-groovy-ecl-converters,ros-groovy-ecl-devices,ros-groovy-ecl-streams,ros-groovy-ecl-ipc,ros-groovy-ecl-time-lite,ros-groovy-ecl-config,ros-groovy-ecl-errors,ros-groovy-ecl-sigslots,ros-groovy-ecl-exceptions,ros-groovy-ecl-geometry
+Description: This includes a suite of programs demo'ing various aspects of the ecl_core. It also includes various benchmarking and utility programs for use primarily with embedded systems.
