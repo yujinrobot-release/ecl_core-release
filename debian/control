@@ -1,0 +1,12 @@
+Source: ros-groovy-ecl-formatters
+Section: misc
+Priority: extra
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 7.0.50~), ros-groovy-ecl-converters,ros-groovy-ecl-exceptions,ros-groovy-catkin,ros-groovy-ecl-license,ros-groovy-ecl-config
+Homepage: http://wiki.ros.org/ecl_formatters
+Standards-Version: 3.9.2
+
+Package: ros-groovy-ecl-formatters
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-groovy-ecl-converters,ros-groovy-ecl-exceptions,ros-groovy-ecl-config
+Description: The formatters here simply format various input types to a specified text format. They can be used with most streaming types (including both ecl and stl streams).
