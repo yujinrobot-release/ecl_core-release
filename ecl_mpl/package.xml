@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
   <name>ecl_mpl</name>
-  <version>0.50.1</version>
+  <version>0.50.2</version>
   <description>
     Metaprogramming tools move alot of runtime calculations to be shifted to
     compile time. This has only very elementary structures at this stage.
@@ -13,7 +13,7 @@
   <url type="bugtracker">https://github.com/stonier/ecl_core/issues</url>
   <author email="d.stonier@gmail.com">Daniel Stonier</author> -->
 
-  <build_depend>catkin</build_depend>
+  <buildtool_depend>catkin</buildtool_depend>
   <build_depend>ecl_license</build_depend>
 </package>
 
