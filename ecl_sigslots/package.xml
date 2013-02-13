@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
   <name>ecl_sigslots</name>
-  <version>0.50.3</version>
+  <version>0.50.4</version>
   <description>
      Provides a signal/slot mechanism (in the same vein as qt sigslots, 
      boost::signals etc for intra-process communication. These include 
@@ -11,10 +11,10 @@
   </description>
   <maintainer email="d.stonier@gmail.com">Daniel Stonier</maintainer>
   <license>BSD</license>
-  <url type="website">http://wiki.ros.org/ecl_sigslots</url>
+  <url type="website">http://ros.org/wiki/ecl_sigslots</url>
   <url type="repository">https://github.com/stonier/ecl_core</url>
   <url type="bugtracker">https://github.com/stonier/ecl_core/issues</url>
-  <author email="d.stonier@gmail.com">Daniel Stonier</author> -->
+  <author email="d.stonier@gmail.com">Daniel Stonier</author>
 
   <buildtool_depend>catkin</buildtool_depend>
   <build_depend>ecl_license</build_depend>
