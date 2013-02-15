@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
   <name>ecl_linear_algebra</name>
-  <version>0.50.4</version>
+  <version>0.50.5</version>
   <description>
      Ecl frontend to a linear matrix package (currently eigen).
   </description>
@@ -18,6 +18,7 @@
   <build_depend>ecl_exceptions</build_depend>
   <build_depend>ecl_formatters</build_depend>
   
+  <run_depend>ecl_license</run_depend>
   <run_depend>ecl_eigen</run_depend>
   <run_depend>ecl_formatters</run_depend>
   <run_depend>ecl_exceptions</run_depend>
