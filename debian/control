@@ -1,0 +1,12 @@
+Source: ros-groovy-ecl-utilities
+Section: misc
+Priority: extra
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 7.0.50~), ros-groovy-ecl-concepts,ros-groovy-ecl-mpl,ros-groovy-catkin,ros-groovy-ecl-license
+Homepage: http://wiki.ros.org/ecl_utilities
+Standards-Version: 3.9.2
+
+Package: ros-groovy-ecl-utilities
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-groovy-ecl-mpl,ros-groovy-ecl-concepts,ros-groovy-ecl-license
+Description: Includes various supporting tools and utilities for c++ programming.
