@@ -1,0 +1,12 @@
+Source: ros-groovy-ecl-type-traits
+Section: misc
+Priority: extra
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 7.0.50~), ros-groovy-ecl-license,ros-groovy-ecl-mpl,ros-groovy-catkin,ros-groovy-ecl-config
+Homepage: http://wiki.ros.org/ecl_type_traits
+Standards-Version: 3.9.2
+
+Package: ros-groovy-ecl-type-traits
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-groovy-ecl-license,ros-groovy-ecl-mpl,ros-groovy-ecl-config
+Description: Extends c++ type traits and implements a few more to boot.
