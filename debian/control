@@ -1,0 +1,12 @@
+Source: ros-groovy-ecl-geometry
+Section: misc
+Priority: extra
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 7.0.50~), ros-groovy-ecl-mpl,ros-groovy-catkin,ros-groovy-ecl-containers,ros-groovy-ecl-type-traits,ros-groovy-ecl-license,ros-groovy-ecl-formatters,ros-groovy-ecl-config,ros-groovy-ecl-math,ros-groovy-ecl-linear-algebra,ros-groovy-ecl-exceptions
+Homepage: http://wiki.ros.org/ecl_geometry
+Standards-Version: 3.9.2
+
+Package: ros-groovy-ecl-geometry
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-groovy-ecl-mpl,ros-groovy-ecl-containers,ros-groovy-ecl-type-traits,ros-groovy-ecl-license,ros-groovy-ecl-formatters,ros-groovy-ecl-config,ros-groovy-ecl-math,ros-groovy-ecl-linear-algebra,ros-groovy-ecl-exceptions
+Description: Any tools relating to mathematical geometry. Primarily featuring polynomials and interpolations.
