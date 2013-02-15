@@ -1,0 +1,12 @@
+Source: ros-groovy-ecl-concepts
+Section: misc
+Priority: extra
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 7.0.50~), ros-groovy-ecl-license,ros-groovy-catkin,ros-groovy-ecl-type-traits,ros-groovy-ecl-config
+Homepage: http://wiki.ros.org/ecl_concepts
+Standards-Version: 3.9.2
+
+Package: ros-groovy-ecl-concepts
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-groovy-ecl-license,ros-groovy-ecl-type-traits,ros-groovy-ecl-config
+Description: Introduces a compile time concept checking mechanism that can be used most commonly to check for required functionality when passing template arguments.
