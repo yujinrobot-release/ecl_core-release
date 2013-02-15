@@ -1,0 +1,12 @@
+Source: ros-groovy-ecl-statistics
+Section: misc
+Priority: extra
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 7.0.50~), ros-groovy-ecl-license,ros-groovy-ecl-linear-algebra,ros-groovy-catkin,ros-groovy-ecl-config
+Homepage: http://wiki.ros.org/ecl_statistics
+Standards-Version: 3.9.2
+
+Package: ros-groovy-ecl-statistics
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-groovy-ecl-license,ros-groovy-ecl-linear-algebra,ros-groovy-ecl-config
+Description: Common statistical structures and algorithms for control systems.
