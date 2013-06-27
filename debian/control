@@ -1,0 +1,12 @@
+Source: ros-hydro-ecl-linear-algebra
+Section: misc
+Priority: extra
+Maintainer: "Daniel Stonier <d.stonier@gmail.com>"
+Build-Depends: debhelper (>= 7.0.50~), ros-hydro-catkin, ros-hydro-ecl-eigen, ros-hydro-ecl-exceptions, ros-hydro-ecl-formatters, ros-hydro-ecl-license
+Homepage: http://wiki.ros.org/ecl_linear_algebra
+Standards-Version: 3.9.2
+
+Package: ros-hydro-ecl-linear-algebra
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-hydro-ecl-eigen, ros-hydro-ecl-exceptions, ros-hydro-ecl-formatters, ros-hydro-ecl-license
+Description: Ecl frontend to a linear matrix package (currently eigen).
