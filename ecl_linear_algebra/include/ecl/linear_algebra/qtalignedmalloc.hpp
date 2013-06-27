@@ -14,7 +14,6 @@
 ** Includes
 *****************************************************************************/
 
-#include <ecl/linear_algebra/macros.hpp>
 #include "formatters.hpp"
 
 #ifndef EIGEN_MATRIXBASE_PLUGIN
@@ -23,10 +22,6 @@
 
 // This one is bad - it doesn't inline its headers (Eigen v3.01) - avoid it for now.
 
-#ifdef ECL_EIGEN_IS_INTERNAL
-  #include <ecl/Eigen3/QtAlignedMalloc>
-#else
-  #include <eigen3/Eigen/QtAlignedMalloc>
-#endif
+#include <Eigen/QtAlignedMalloc>
 
 #endif /* ECL_LINEAR_ALGEBRA_QTALIGNEDMALLOC_HPP_ */

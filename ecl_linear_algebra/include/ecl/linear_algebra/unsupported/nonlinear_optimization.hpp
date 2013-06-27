@@ -16,16 +16,10 @@
 ** Includes
 *****************************************************************************/
 
-#include <ecl/linear_algebra/macros.hpp>
-
 #ifndef EIGEN_MATRIXBASE_PLUGIN
-  #define EIGEN_MATRIXBASE_PLUGIN <ecl/linear_algebra/eigen_plugin.hpp>
+//   #define EIGEN_MATRIXBASE_PLUGIN <ecl/linear_algebra/eigen_plugin.hpp>
 #endif
 
-#ifdef ECL_EIGEN_IS_INTERNAL
-  #include <ecl/Eigen3/unsupported/Eigen/NonLinearOptimization>
-#else
-  #include <eigen3/unsupported/Eigen/NonLinearOptimization>
-#endif
+#include <unsupported/Eigen/NonLinearOptimization>
 
 #endif /* ECL_LINEAR_ALGEBRA_NONLINEAR_OPTIMIZATION_HPP_ */

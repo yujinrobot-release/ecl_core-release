@@ -16,16 +16,10 @@
 ** Includes
 *****************************************************************************/
 
-#include <ecl/linear_algebra/macros.hpp>
-
 #ifndef EIGEN_MATRIXBASE_PLUGIN
   #define EIGEN_MATRIXBASE_PLUGIN <ecl/linear_algebra/eigen_plugin.hpp>
 #endif
 
-#ifdef ECL_EIGEN_IS_INTERNAL
-  #include <ecl/Eigen3/unsupported/Eigen/NumericalDiff>
-#else
-  #include <eigen3/unsupported/Eigen/NumericalDiff>
-#endif
+#include <unsupported/Eigen/NumericalDiff>
 
 #endif /* ECL_LINEAR_ALGEBRA_NUMERICAL_DIFF_HPP_ */

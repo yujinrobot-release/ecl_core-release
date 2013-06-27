@@ -16,17 +16,12 @@
 ** Includes
 *****************************************************************************/
 
-#include <ecl/linear_algebra/macros.hpp>
 #include "formatters.hpp"
 
 #ifndef EIGEN_MATRIXBASE_PLUGIN
   #define EIGEN_MATRIXBASE_PLUGIN <ecl/linear_algebra/eigen_plugin.hpp>
 #endif
 
-#ifdef ECL_EIGEN_IS_INTERNAL
-  #include <ecl/Eigen3/SVD>
-#else
-  #include <eigen3/Eigen/SVD>
-#endif
+#include <Eigen/SVD>
 
 #endif /* ECL_LINEAR_ALGEBRA_SVD_HPP_ */

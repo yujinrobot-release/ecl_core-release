@@ -29,12 +29,41 @@
 #include <ecl/utilities/blueprints.hpp>
 #include <ecl/formatters/floats.hpp>
 #include <iostream>
+#include "macros.hpp"
 
 /*****************************************************************************
 ** Namespaces
 *****************************************************************************/
 
 namespace ecl {
+
+/*****************************************************************************
+** Forward declarations
+*****************************************************************************/
+
+template <unsigned int N> class Polynomial;
+
+/*****************************************************************************
+** BluePrintFactory
+*****************************************************************************/
+
+/**
+ * @brief Primary template for the @ref ecl::Polynomial "Polynomial" blueprint factories.
+ *
+ * Primary template for the polynomial blueprint factories. This is in fact empty since it covers
+ * polynomials of all orders. Particular polynomial blueprint factories are specified in the
+ * specialisations.
+ *
+ * @tparam N : degree of the polynomials to create blueprints for.
+ *
+ * @sa @ref ecl::Polynomial "Polynomial", BluePrintFactory< ecl::Polynomial<3> >.
+ */
+template<unsigned int N>
+class BluePrintFactory< Polynomial<N> > {
+public:
+	BluePrintFactory() {};
+	~BluePrintFactory() {};
+};
 
 /*****************************************************************************
 ** Interface [Polynomial]
@@ -78,7 +107,7 @@ namespace ecl {
  * @sa @ref polynomialsGeometry "Math::Polynomials".
  **/
 template <unsigned int N>
-class ECL_PUBLIC Polynomial : public BluePrintFactory< Polynomial<N> >, public FunctionMath< Polynomial<N> > {
+class ecl_geometry_PUBLIC Polynomial : public BluePrintFactory< Polynomial<N> >, public FunctionMath< Polynomial<N> > {
     public:
         /*********************
         ** Convenience
@@ -459,7 +488,7 @@ namespace blueprints {
  * @sa @ref ecl::LinearFunction.
  *
  **/
-class LinearInterpolation : public ecl::BluePrint<LinearInterpolation> {
+class ecl_geometry_PUBLIC LinearInterpolation : public ecl::BluePrint<LinearInterpolation> {
     public:
         /**
          * @brief Abstract representation of the class to be instantiated/configured.
@@ -522,7 +551,7 @@ class LinearInterpolation : public ecl::BluePrint<LinearInterpolation> {
  * @sa @ref ecl::LinearFunction.
  *
  **/
-class LinearPointSlopeForm : public ecl::BluePrint<LinearPointSlopeForm> {
+class ecl_geometry_PUBLIC LinearPointSlopeForm : public ecl::BluePrint<LinearPointSlopeForm> {
     public:
         /**
          * @brief Abstract representation of the class to be instantiated/configured.
@@ -588,7 +617,7 @@ class LinearPointSlopeForm : public ecl::BluePrint<LinearPointSlopeForm> {
  * @sa @ref ecl::Polynomial "Polynomial".
  *
  **/
-class CubicDerivativeInterpolation : public ecl::BluePrint<CubicDerivativeInterpolation> {
+class ecl_geometry_PUBLIC CubicDerivativeInterpolation : public ecl::BluePrint<CubicDerivativeInterpolation> {
     public:
         /**
          * @brief Abstract representation of the class to be instantiated/configured.
@@ -658,7 +687,7 @@ class CubicDerivativeInterpolation : public ecl::BluePrint<CubicDerivativeInterp
  * @sa @ref ecl::Polynomial "Polynomial".
  *
  **/
-class CubicSecondDerivativeInterpolation : public ecl::BluePrint<CubicSecondDerivativeInterpolation>  {
+class ecl_geometry_PUBLIC CubicSecondDerivativeInterpolation : public ecl::BluePrint<CubicSecondDerivativeInterpolation>  {
     public:
         /**
          * @brief Abstract representation of the class to be instantiated/configured.
@@ -732,7 +761,7 @@ class CubicSecondDerivativeInterpolation : public ecl::BluePrint<CubicSecondDeri
  * @sa @ref ecl::Polynomial "Polynomial".
  *
  **/
-class QuinticInterpolation : public ecl::BluePrint<QuinticInterpolation> {
+class ecl_geometry_PUBLIC QuinticInterpolation : public ecl::BluePrint<QuinticInterpolation> {
     public:
         /**
          * @brief Abstract representation of the class to be instantiated/configured.
@@ -799,24 +828,6 @@ using blueprints::LinearPointSlopeForm;
 using blueprints::CubicDerivativeInterpolation;
 using blueprints::CubicSecondDerivativeInterpolation;
 using blueprints::QuinticInterpolation;
-
-/**
- * @brief Primary template for the @ref ecl::Polynomial "Polynomial" blueprint factories.
- *
- * Primary template for the polynomial blueprint factories. This is in fact empty since it covers
- * polynomials of all orders. Particular polynomial blueprint factories are specified in the
- * specialisations.
- *
- * @tparam N : degree of the polynomials to create blueprints for.
- *
- * @sa @ref ecl::Polynomial "Polynomial", BluePrintFactory< ecl::Polynomial<3> >.
- */
-template<unsigned int N>
-class BluePrintFactory< Polynomial<N> > {
-public:
-	BluePrintFactory() {};
-	~BluePrintFactory() {};
-};
 
 /**
  * @brief Blueprint factory for linear functions.
@@ -976,7 +987,7 @@ class BluePrintFactory< QuinticPolynomial > {
  * @sa Maximum, LinearFunction, @ref polynomialsGeometry "Math::Polynomials".
  */
 template<>
-class ECL_PUBLIC Maximum< LinearFunction > {
+class ecl_geometry_PUBLIC Maximum< LinearFunction > {
 public:
 	/**
 	 * @brief Returns the maximum of a linear function.
@@ -1000,7 +1011,7 @@ public:
  * @sa Maximum, CubicPolynomial, @ref polynomialsGeometry "Math::Polynomials".
  */
 template<>
-class ECL_PUBLIC Maximum<CubicPolynomial> {
+class ecl_geometry_PUBLIC Maximum<CubicPolynomial> {
 public:
 	/**
 	 * @brief Returns the maximum of a cubic polynomial.
@@ -1025,7 +1036,7 @@ public:
  * @sa Minimum, LinearFunction, @ref polynomialsGeometry "Math::Polynomials".
  */
 template<>
-class ECL_PUBLIC Minimum< LinearFunction > {
+class ecl_geometry_PUBLIC Minimum< LinearFunction > {
 public:
 	/**
 	 * @brief Returns the minimum of a linear function.
@@ -1049,7 +1060,7 @@ public:
  * @sa Minimum, CubicPolynomial, @ref polynomialsGeometry "Math::Polynomials".
  */
 template<>
-class ECL_PUBLIC Minimum<CubicPolynomial> {
+class ecl_geometry_PUBLIC Minimum<CubicPolynomial> {
 public:
 	/**
 	 * @brief Returns the minimum of a cubic polynomial.
@@ -1074,7 +1085,7 @@ public:
  * @sa Intersection, LinearFunction, @ref polynomialsGeometry "Math::Polynomials".
  */
 template<>
-class ECL_PUBLIC Intersection< LinearFunction > {
+class ecl_geometry_PUBLIC Intersection< LinearFunction > {
 public:
 	Intersection() : last_operation_failed(false) {}
 	virtual ~Intersection() {}
@@ -1110,7 +1121,7 @@ private:
  * Does long division of the polynomial by (x-factor)
  */
 template<>
-class ECL_PUBLIC Division<QuadraticPolynomial> {
+class ecl_geometry_PUBLIC Division<QuadraticPolynomial> {
 public:
 	Division() {};
 	virtual ~Division() {};
@@ -1130,7 +1141,7 @@ public:
  * Does long division of the polynomial by (x-factor)
  */
 template<>
-class ECL_PUBLIC Division<CubicPolynomial> {
+class ecl_geometry_PUBLIC Division<CubicPolynomial> {
 public:
 	Division() {};
 	virtual ~Division() {};
@@ -1153,7 +1164,7 @@ public:
  * @sa Roots, Linear Function, @ref polynomialsGeometry "Math::Polynomials".
  */
 template<>
-class ECL_PUBLIC Roots<LinearFunction> {
+class ecl_geometry_PUBLIC Roots<LinearFunction> {
 public:
 	Roots() {}
 	virtual ~Roots() {}
@@ -1172,7 +1183,7 @@ public:
  * @sa Roots, QuadraticPolynomial, @ref polynomialsGeometry "Math::Polynomials".
  */
 template<>
-class ECL_PUBLIC Roots<QuadraticPolynomial> {
+class ecl_geometry_PUBLIC Roots<QuadraticPolynomial> {
 public:
 	Roots() {}
 	virtual ~Roots() {}
@@ -1190,7 +1201,7 @@ public:
  * @sa Roots, CubicPolynomial, @ref polynomialsGeometry "Math::Polynomials".
  */
 template<>
-class ECL_PUBLIC Roots<CubicPolynomial> {
+class ecl_geometry_PUBLIC Roots<CubicPolynomial> {
 public:
 	Roots() {}
 	virtual ~Roots() {}
