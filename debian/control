@@ -1,0 +1,12 @@
+Source: ros-hydro-ecl-streams
+Section: misc
+Priority: extra
+Maintainer: "Daniel Stonier <d.stonier@gmail.com>"
+Build-Depends: debhelper (>= 7.0.50~), ros-hydro-catkin, ros-hydro-ecl-concepts, ros-hydro-ecl-converters, ros-hydro-ecl-devices, ros-hydro-ecl-errors, ros-hydro-ecl-license, ros-hydro-ecl-time, ros-hydro-ecl-type-traits
+Homepage: http://wiki.ros.org/ecl_streams
+Standards-Version: 3.9.2
+
+Package: ros-hydro-ecl-streams
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-hydro-ecl-concepts, ros-hydro-ecl-converters, ros-hydro-ecl-devices, ros-hydro-ecl-errors, ros-hydro-ecl-license, ros-hydro-ecl-time, ros-hydro-ecl-type-traits
+Description: These are lightweight text streaming classes that connect to standardised ecl type devices.
