@@ -19,8 +19,6 @@ find_package(catkin REQUIRED COMPONENTS
     ecl_utilities
     )
 
-set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${ecl_build_DIR}/modules)
-include(ecl_platform_detection)
 ecl_detect_threads()
 
 set (thread_INCLUDE_DIRS "" CACHE STRING "Platform thread include directories")
@@ -33,7 +31,6 @@ endif()
 # Catkin
 ##############################################################################
 
-message(STATUS "catkin_LIBRARIES...........${catkin_LIBRARIES}")
 catkin_package(
         INCLUDE_DIRS include
         LIBRARIES ${PROJECT_NAME}
