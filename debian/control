@@ -1,0 +1,12 @@
+Source: ros-hydro-ecl-geometry
+Section: misc
+Priority: extra
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 7.0.50~), ros-hydro-catkin, ros-hydro-ecl-config, ros-hydro-ecl-containers, ros-hydro-ecl-exceptions, ros-hydro-ecl-formatters, ros-hydro-ecl-license, ros-hydro-ecl-linear-algebra, ros-hydro-ecl-math, ros-hydro-ecl-mpl, ros-hydro-ecl-type-traits
+Homepage: http://wiki.ros.org/ecl_geometry
+Standards-Version: 3.9.2
+
+Package: ros-hydro-ecl-geometry
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-hydro-ecl-config, ros-hydro-ecl-containers, ros-hydro-ecl-exceptions, ros-hydro-ecl-formatters, ros-hydro-ecl-license, ros-hydro-ecl-linear-algebra, ros-hydro-ecl-math, ros-hydro-ecl-mpl, ros-hydro-ecl-type-traits
+Description: Any tools relating to mathematical geometry. Primarily featuring polynomials and interpolations.
