@@ -1,0 +1,15 @@
+ros-hydro-ecl-threads (0.60.7-0precise) precise; urgency=high
+
+
+
+ -- Daniel Stonier <d.stonier@gmail.com>  Sun, 02 Feb 2014 15:00:00 -0000
+
+ros-hydro-ecl-threads (0.60.6-0precise) precise; urgency=high
+
+  * update to catkin's CFG_EXTRAS for easy to find cmake modules.
+  * remove cmake debug message.
+  * Contributors: Daniel Stonier
+
+ -- Daniel Stonier <d.stonier@gmail.com>  Tue, 28 Jan 2014 15:00:00 -0000
+
+
