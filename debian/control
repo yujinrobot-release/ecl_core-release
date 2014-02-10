@@ -1,0 +1,12 @@
+Source: ros-hydro-ecl-statistics
+Section: misc
+Priority: extra
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 7.0.50~), ros-hydro-catkin, ros-hydro-ecl-config, ros-hydro-ecl-license, ros-hydro-ecl-linear-algebra
+Homepage: http://wiki.ros.org/ecl_statistics
+Standards-Version: 3.9.2
+
+Package: ros-hydro-ecl-statistics
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-hydro-ecl-config, ros-hydro-ecl-license, ros-hydro-ecl-linear-algebra
+Description: Common statistical structures and algorithms for control systems.
