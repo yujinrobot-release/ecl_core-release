@@ -1,0 +1,21 @@
+ros-hydro-ecl-ipc (0.60.8-0quantal) quantal; urgency=high
+
+  * ecl_ipc requires ecl_build for cmake modules.
+  * make sure we detect threads in this module
+  * Contributors: Daniel Stonier
+
+ -- Daniel Stonier <d.stonier@gmail.com>  Sun, 09 Feb 2014 15:00:00 -0000
+
+ros-hydro-ecl-ipc (0.60.7-0quantal) quantal; urgency=high
+
+
+
+ -- Daniel Stonier <d.stonier@gmail.com>  Sun, 02 Feb 2014 15:00:00 -0000
+
+ros-hydro-ecl-ipc (0.60.6-0quantal) quantal; urgency=high
+
+
+
+ -- Daniel Stonier <d.stonier@gmail.com>  Tue, 28 Jan 2014 15:00:00 -0000
+
+
