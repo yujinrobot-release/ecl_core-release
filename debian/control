@@ -1,0 +1,12 @@
+Source: ros-hydro-ecl-containers
+Section: misc
+Priority: extra
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 7.0.50~), ros-hydro-catkin, ros-hydro-ecl-config, ros-hydro-ecl-converters, ros-hydro-ecl-errors, ros-hydro-ecl-exceptions, ros-hydro-ecl-formatters, ros-hydro-ecl-license, ros-hydro-ecl-mpl, ros-hydro-ecl-type-traits, ros-hydro-ecl-utilities
+Homepage: http://wiki.ros.org/ecl_containers
+Standards-Version: 3.9.2
+
+Package: ros-hydro-ecl-containers
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-hydro-ecl-config, ros-hydro-ecl-converters, ros-hydro-ecl-errors, ros-hydro-ecl-exceptions, ros-hydro-ecl-formatters, ros-hydro-ecl-license, ros-hydro-ecl-mpl, ros-hydro-ecl-type-traits, ros-hydro-ecl-utilities
+Description: The containers included here are intended to extend the stl containers. In all cases, these implementations are designed to implement c++ conveniences and safety where speed is not sacrificed. Also includes techniques for memory debugging of common problems such as buffer overruns.
