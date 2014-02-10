@@ -1,0 +1,12 @@
+Source: ros-hydro-ecl-formatters
+Section: misc
+Priority: extra
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 7.0.50~), ros-hydro-catkin, ros-hydro-ecl-config, ros-hydro-ecl-converters, ros-hydro-ecl-exceptions, ros-hydro-ecl-license
+Homepage: http://wiki.ros.org/ecl_formatters
+Standards-Version: 3.9.2
+
+Package: ros-hydro-ecl-formatters
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-hydro-ecl-config, ros-hydro-ecl-converters, ros-hydro-ecl-exceptions, ros-hydro-ecl-license
+Description: The formatters here simply format various input types to a specified text format. They can be used with most streaming types (including both ecl and stl streams).
