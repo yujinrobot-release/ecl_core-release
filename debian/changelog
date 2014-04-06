@@ -1,0 +1,21 @@
+ros-indigo-ecl-threads (0.60.8-0trusty) trusty; urgency=high
+
+
+
+ -- Daniel Stonier <d.stonier@gmail.com>  Sun, 09 Feb 2014 15:00:00 -0000
+
+ros-indigo-ecl-threads (0.60.7-0trusty) trusty; urgency=high
+
+
+
+ -- Daniel Stonier <d.stonier@gmail.com>  Sun, 02 Feb 2014 15:00:00 -0000
+
+ros-indigo-ecl-threads (0.60.6-0trusty) trusty; urgency=high
+
+  * update to catkin's CFG_EXTRAS for easy to find cmake modules.
+  * remove cmake debug message.
+  * Contributors: Daniel Stonier
+
+ -- Daniel Stonier <d.stonier@gmail.com>  Tue, 28 Jan 2014 15:00:00 -0000
+
+
