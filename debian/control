@@ -1,0 +1,12 @@
+Source: ros-indigo-ecl-threads
+Section: misc
+Priority: extra
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-indigo-catkin, ros-indigo-ecl-build, ros-indigo-ecl-concepts, ros-indigo-ecl-config, ros-indigo-ecl-errors, ros-indigo-ecl-exceptions, ros-indigo-ecl-license, ros-indigo-ecl-time, ros-indigo-ecl-utilities
+Homepage: http://wiki.ros.org/ecl_threads
+Standards-Version: 3.9.2
+
+Package: ros-indigo-ecl-threads
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-indigo-ecl-build, ros-indigo-ecl-concepts, ros-indigo-ecl-config, ros-indigo-ecl-errors, ros-indigo-ecl-exceptions, ros-indigo-ecl-license, ros-indigo-ecl-time, ros-indigo-ecl-utilities
+Description: This package provides the c++ extensions for a variety of threaded programming tools. These are usually different on different platforms, so the architecture for a cross-platform framework is also implemented.
