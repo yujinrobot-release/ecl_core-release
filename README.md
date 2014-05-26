@@ -1,3 +1,44 @@
+## ecl_core (indigo) - 0.60.9-1
+
+The packages in the `ecl_core` repository were released into the `indigo` distro by running `/usr/bin/bloom-release ecl_core -t indigo -r indigo` on `Mon, 26 May 2014 02:54:35 -0000`
+
+These packages were released:
+- `ecl_command_line`
+- `ecl_concepts`
+- `ecl_containers`
+- `ecl_converters`
+- `ecl_core`
+- `ecl_core_apps`
+- `ecl_devices`
+- `ecl_eigen`
+- `ecl_exceptions`
+- `ecl_formatters`
+- `ecl_geometry`
+- `ecl_ipc`
+- `ecl_linear_algebra`
+- `ecl_math`
+- `ecl_mpl`
+- `ecl_sigslots`
+- `ecl_statistics`
+- `ecl_streams`
+- `ecl_threads`
+- `ecl_time`
+- `ecl_type_traits`
+- `ecl_utilities`
+
+Version of package(s) in repository `ecl_core`:
+- rosdistro version: `0.60.9-0`
+- old version: `0.60.9-0`
+- new version: `0.60.9-1`
+
+Versions of tools used:
+- bloom version: `0.5.9`
+- catkin_pkg version: `0.2.2`
+- rosdep version: `0.10.27`
+- rosdistro version: `0.3.5`
+- vcstools version: `0.1.35`
+
+
 ## ecl_core (indigo) - 0.60.9-0
 
 User `snorri@snorriheim` released the packages in the `ecl_core` repository into the `indigo` distro by running `/usr/bin/bloom-release --track indigo --rosdistro indigo ecl_core` on `Tue, 08 Apr 2014 16:12:05 -0000`
