@@ -1,9 +1,7 @@
 /**
  * @file /src/utils/yaw2quaternion.cpp
  *
- * @brief Utility for testing a serial port connection.
- *
- * @date September 2014
+ * @brief Angle converter.
  **/
 
 /*****************************************************************************
