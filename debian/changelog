@@ -1,7 +1,0 @@
-ros-indigo-ecl-geometry (0.61.1-0trusty) trusty; urgency=high
-
-  * linear segments and shortest path to these
-
- -- Daniel Stonier <d.stonier@gmail.com>  Tue, 21 Jul 2015 15:00:00 -0000
-
-
