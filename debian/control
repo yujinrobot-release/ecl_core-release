@@ -1,0 +1,12 @@
+Source: ros-indigo-ecl-linear-algebra
+Section: misc
+Priority: extra
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-indigo-catkin, ros-indigo-ecl-eigen, ros-indigo-ecl-exceptions, ros-indigo-ecl-formatters, ros-indigo-ecl-license
+Homepage: http://wiki.ros.org/ecl_linear_algebra
+Standards-Version: 3.9.2
+
+Package: ros-indigo-ecl-linear-algebra
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-indigo-ecl-eigen, ros-indigo-ecl-exceptions, ros-indigo-ecl-formatters, ros-indigo-ecl-license
+Description: Ecl frontend to a linear matrix package (currently eigen).
