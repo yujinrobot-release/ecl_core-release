@@ -1,0 +1,12 @@
+Source: ros-jade-ecl-command-line
+Section: misc
+Priority: extra
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-jade-catkin, ros-jade-ecl-license
+Homepage: http://wiki.ros.org/ecl_command_line
+Standards-Version: 3.9.2
+
+Package: ros-jade-ecl-command-line
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-jade-ecl-license
+Description: Embeds the TCLAP library inside the ecl. This is a very convenient command line parser in templatised c++.
