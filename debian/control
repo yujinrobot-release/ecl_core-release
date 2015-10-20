@@ -1,0 +1,12 @@
+Source: ros-jade-ecl-linear-algebra
+Section: misc
+Priority: extra
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-jade-catkin, ros-jade-ecl-eigen, ros-jade-ecl-exceptions, ros-jade-ecl-formatters, ros-jade-ecl-license
+Homepage: http://wiki.ros.org/ecl_linear_algebra
+Standards-Version: 3.9.2
+
+Package: ros-jade-ecl-linear-algebra
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-jade-ecl-eigen, ros-jade-ecl-exceptions, ros-jade-ecl-formatters, ros-jade-ecl-license
+Description: Ecl frontend to a linear matrix package (currently eigen).
