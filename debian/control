@@ -1,0 +1,12 @@
+Source: ros-jade-ecl-filesystem
+Section: misc
+Priority: extra
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-jade-catkin, ros-jade-ecl-build, ros-jade-ecl-config, ros-jade-ecl-errors, ros-jade-ecl-exceptions, ros-jade-ecl-license
+Homepage: http://wiki.ros.org/ecl_filesystem
+Standards-Version: 3.9.2
+
+Package: ros-jade-ecl-filesystem
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-jade-ecl-build, ros-jade-ecl-config, ros-jade-ecl-errors, ros-jade-ecl-exceptions, ros-jade-ecl-license
+Description: Cross platform filesystem utilities (until c++11 makes its way in).
