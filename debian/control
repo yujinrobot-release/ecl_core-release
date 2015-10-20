@@ -1,0 +1,12 @@
+Source: ros-jade-ecl-mpl
+Section: misc
+Priority: extra
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-jade-catkin, ros-jade-ecl-license
+Homepage: http://wiki.ros.org/ecl_mpl
+Standards-Version: 3.9.2
+
+Package: ros-jade-ecl-mpl
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-jade-ecl-license
+Description: Metaprogramming tools move alot of runtime calculations to be shifted to compile time. This has only very elementary structures at this stage.
