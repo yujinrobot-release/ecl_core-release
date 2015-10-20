@@ -1,0 +1,12 @@
+Source: ros-jade-ecl-threads
+Section: misc
+Priority: extra
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-jade-catkin, ros-jade-ecl-build, ros-jade-ecl-concepts, ros-jade-ecl-config, ros-jade-ecl-errors, ros-jade-ecl-exceptions, ros-jade-ecl-license, ros-jade-ecl-time, ros-jade-ecl-utilities
+Homepage: http://wiki.ros.org/ecl_threads
+Standards-Version: 3.9.2
+
+Package: ros-jade-ecl-threads
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-jade-ecl-build, ros-jade-ecl-concepts, ros-jade-ecl-config, ros-jade-ecl-errors, ros-jade-ecl-exceptions, ros-jade-ecl-license, ros-jade-ecl-time, ros-jade-ecl-utilities
+Description: This package provides the c++ extensions for a variety of threaded programming tools. These are usually different on different platforms, so the architecture for a cross-platform framework is also implemented.
