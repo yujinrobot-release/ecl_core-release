@@ -1,0 +1,12 @@
+Source: ros-jade-ecl-core
+Section: misc
+Priority: extra
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-jade-catkin
+Homepage: http://www.ros.org/wiki/ecl_core
+Standards-Version: 3.9.2
+
+Package: ros-jade-ecl-core
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-jade-ecl-command-line, ros-jade-ecl-concepts, ros-jade-ecl-containers, ros-jade-ecl-converters, ros-jade-ecl-core-apps, ros-jade-ecl-devices, ros-jade-ecl-eigen, ros-jade-ecl-exceptions, ros-jade-ecl-formatters, ros-jade-ecl-geometry, ros-jade-ecl-ipc, ros-jade-ecl-linear-algebra, ros-jade-ecl-math, ros-jade-ecl-mpl, ros-jade-ecl-sigslots, ros-jade-ecl-statistics, ros-jade-ecl-streams, ros-jade-ecl-threads, ros-jade-ecl-time, ros-jade-ecl-type-traits, ros-jade-ecl-utilities
+Description: A set of tools and interfaces extending the capabilities of c++ to provide a lightweight, consistent interface with a focus for control programming.
