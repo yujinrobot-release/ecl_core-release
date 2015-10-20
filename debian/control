@@ -1,0 +1,12 @@
+Source: ros-jade-ecl-statistics
+Section: misc
+Priority: extra
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-jade-catkin, ros-jade-ecl-config, ros-jade-ecl-license, ros-jade-ecl-linear-algebra
+Homepage: http://wiki.ros.org/ecl_statistics
+Standards-Version: 3.9.2
+
+Package: ros-jade-ecl-statistics
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-jade-ecl-config, ros-jade-ecl-license, ros-jade-ecl-linear-algebra
+Description: Common statistical structures and algorithms for control systems.
