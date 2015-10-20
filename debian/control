@@ -1,0 +1,12 @@
+Source: ros-jade-ecl-type-traits
+Section: misc
+Priority: extra
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-jade-catkin, ros-jade-ecl-config, ros-jade-ecl-license, ros-jade-ecl-mpl
+Homepage: http://wiki.ros.org/ecl_type_traits
+Standards-Version: 3.9.2
+
+Package: ros-jade-ecl-type-traits
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-jade-ecl-config, ros-jade-ecl-license, ros-jade-ecl-mpl
+Description: Extends c++ type traits and implements a few more to boot.
