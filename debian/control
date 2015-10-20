@@ -1,0 +1,12 @@
+Source: ros-jade-ecl-devices
+Section: misc
+Priority: extra
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-jade-catkin, ros-jade-ecl-config, ros-jade-ecl-containers, ros-jade-ecl-errors, ros-jade-ecl-license, ros-jade-ecl-mpl, ros-jade-ecl-threads, ros-jade-ecl-type-traits, ros-jade-ecl-utilities
+Homepage: http://wiki.ros.org/ecl_devices
+Standards-Version: 3.9.2
+
+Package: ros-jade-ecl-devices
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-jade-ecl-config, ros-jade-ecl-containers, ros-jade-ecl-errors, ros-jade-ecl-license, ros-jade-ecl-mpl, ros-jade-ecl-threads, ros-jade-ecl-type-traits, ros-jade-ecl-utilities
+Description: Provides an extensible and standardised framework for input-output devices.
