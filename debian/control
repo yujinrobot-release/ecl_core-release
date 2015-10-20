@@ -1,0 +1,12 @@
+Source: ros-jade-ecl-geometry
+Section: misc
+Priority: extra
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-jade-catkin, ros-jade-ecl-config, ros-jade-ecl-containers, ros-jade-ecl-exceptions, ros-jade-ecl-formatters, ros-jade-ecl-license, ros-jade-ecl-linear-algebra, ros-jade-ecl-math, ros-jade-ecl-mpl, ros-jade-ecl-type-traits
+Homepage: http://wiki.ros.org/ecl_geometry
+Standards-Version: 3.9.2
+
+Package: ros-jade-ecl-geometry
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-jade-ecl-config, ros-jade-ecl-containers, ros-jade-ecl-exceptions, ros-jade-ecl-formatters, ros-jade-ecl-license, ros-jade-ecl-linear-algebra, ros-jade-ecl-math, ros-jade-ecl-mpl, ros-jade-ecl-type-traits
+Description: Any tools relating to mathematical geometry. Primarily featuring polynomials and interpolations.
