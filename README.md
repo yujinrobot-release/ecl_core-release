@@ -1,3 +1,47 @@
+## ecl_core (jade) - 0.61.4-0
+
+The packages in the `ecl_core` repository were released into the `jade` distro by running `/usr/bin/bloom-release ecl_core --track jade --rosdistro jade --new-track` on `Tue, 20 Oct 2015 00:23:10 -0000`
+
+These packages were released:
+- `ecl_command_line`
+- `ecl_concepts`
+- `ecl_containers`
+- `ecl_converters`
+- `ecl_core`
+- `ecl_core_apps`
+- `ecl_devices`
+- `ecl_eigen`
+- `ecl_exceptions`
+- `ecl_filesystem`
+- `ecl_formatters`
+- `ecl_geometry`
+- `ecl_ipc`
+- `ecl_linear_algebra`
+- `ecl_math`
+- `ecl_mpl`
+- `ecl_sigslots`
+- `ecl_statistics`
+- `ecl_streams`
+- `ecl_threads`
+- `ecl_time`
+- `ecl_type_traits`
+- `ecl_utilities`
+
+Version of package(s) in repository `ecl_core`:
+- upstream repository: https://github.com/stonier/ecl_core.git
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `null`
+- new version: `0.61.4-0`
+
+Versions of tools used:
+- bloom version: `0.5.20`
+- catkin_pkg version: `0.2.3`
+- rosdep version: `0.10.28`
+- rosdistro version: `0.4.0`
+- vcstools version: `0.1.35`
+
+
 ## ecl_core (indigo) - 0.61.4-0
 
 The packages in the `ecl_core` repository were released into the `indigo` distro by running `/usr/bin/bloom-release --track indigo --rosdistro indigo ecl_core` on `Fri, 09 Oct 2015 19:00:11 -0000`
