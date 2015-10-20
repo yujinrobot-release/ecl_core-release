@@ -1,0 +1,7 @@
+ros-jade-ecl-converters (0.61.4-0utopic) utopic; urgency=high
+
+  * fix byte array converter error handling in release mode
+
+ -- Daniel Stonier <d.stonier@gmail.com>  Fri, 09 Oct 2015 15:00:00 -0000
+
+
