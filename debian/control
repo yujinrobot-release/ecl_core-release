@@ -1,0 +1,12 @@
+Source: ros-indigo-ecl-containers
+Section: misc
+Priority: extra
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-indigo-catkin, ros-indigo-ecl-config, ros-indigo-ecl-converters, ros-indigo-ecl-errors, ros-indigo-ecl-exceptions, ros-indigo-ecl-formatters, ros-indigo-ecl-license, ros-indigo-ecl-mpl, ros-indigo-ecl-type-traits, ros-indigo-ecl-utilities
+Homepage: http://wiki.ros.org/ecl_containers
+Standards-Version: 3.9.2
+
+Package: ros-indigo-ecl-containers
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-indigo-ecl-config, ros-indigo-ecl-converters, ros-indigo-ecl-errors, ros-indigo-ecl-exceptions, ros-indigo-ecl-formatters, ros-indigo-ecl-license, ros-indigo-ecl-mpl, ros-indigo-ecl-type-traits, ros-indigo-ecl-utilities
+Description: The containers included here are intended to extend the stl containers. In all cases, these implementations are designed to implement c++ conveniences and safety where speed is not sacrificed. Also includes techniques for memory debugging of common problems such as buffer overruns.
