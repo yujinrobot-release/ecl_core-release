@@ -1,0 +1,12 @@
+Source: ros-indigo-ecl-core
+Section: misc
+Priority: extra
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-indigo-catkin
+Homepage: http://www.ros.org/wiki/ecl_core
+Standards-Version: 3.9.2
+
+Package: ros-indigo-ecl-core
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-indigo-ecl-command-line, ros-indigo-ecl-concepts, ros-indigo-ecl-containers, ros-indigo-ecl-converters, ros-indigo-ecl-core-apps, ros-indigo-ecl-devices, ros-indigo-ecl-eigen, ros-indigo-ecl-exceptions, ros-indigo-ecl-formatters, ros-indigo-ecl-geometry, ros-indigo-ecl-ipc, ros-indigo-ecl-linear-algebra, ros-indigo-ecl-math, ros-indigo-ecl-mpl, ros-indigo-ecl-sigslots, ros-indigo-ecl-statistics, ros-indigo-ecl-streams, ros-indigo-ecl-threads, ros-indigo-ecl-time, ros-indigo-ecl-type-traits, ros-indigo-ecl-utilities
+Description: A set of tools and interfaces extending the capabilities of c++ to provide a lightweight, consistent interface with a focus for control programming.
