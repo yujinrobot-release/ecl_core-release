@@ -1,0 +1,13 @@
+Source: ros-kinetic-ecl-command-line
+Section: misc
+Priority: extra
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-kinetic-catkin, ros-kinetic-ecl-license
+Homepage: http://wiki.ros.org/ecl_command_line
+Standards-Version: 3.9.2
+
+Package: ros-kinetic-ecl-command-line
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-kinetic-ecl-license
+Description: Embeds the TCLAP library inside the ecl.
+ This is a very convenient command line parser in templatised c++.
