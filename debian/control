@@ -1,0 +1,12 @@
+Source: ros-kinetic-ecl-linear-algebra
+Section: misc
+Priority: extra
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-kinetic-catkin, ros-kinetic-ecl-build, ros-kinetic-ecl-converters, ros-kinetic-ecl-eigen, ros-kinetic-ecl-exceptions, ros-kinetic-ecl-formatters, ros-kinetic-ecl-license, ros-kinetic-ecl-math, ros-kinetic-sophus
+Homepage: http://wiki.ros.org/ecl_linear_algebra
+Standards-Version: 3.9.2
+
+Package: ros-kinetic-ecl-linear-algebra
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-kinetic-ecl-build, ros-kinetic-ecl-converters, ros-kinetic-ecl-eigen, ros-kinetic-ecl-exceptions, ros-kinetic-ecl-formatters, ros-kinetic-ecl-license, ros-kinetic-ecl-math, ros-kinetic-sophus
+Description: Ecl frontend to a linear matrix package (currently eigen).
