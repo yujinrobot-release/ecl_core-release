@@ -1,0 +1,7 @@
+ros-kinetic-ecl-concepts (0.61.13-0wily) wily; urgency=high
+
+  * drop unused typedefs
+
+ -- Daniel Stonier <d.stonier@gmail.com>  Mon, 02 May 2016 15:00:00 -0000
+
+
