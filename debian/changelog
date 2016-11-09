@@ -1,7 +1,0 @@
-ros-kinetic-ecl-exceptions (0.61.14-0wily) wily; urgency=high
-
-  * expose the string message in the exception api
-
- -- Daniel Stonier <d.stonier@gmail.com>  Wed, 15 Jun 2016 15:00:00 -0000
-
-
