@@ -1,24 +1,18 @@
 /**
- * @file /include/ecl/statistics.hpp
- *
- * @brief Various probabilistic classes mostly relevant to slam.
- *
- * @date October 2009
+ * @file /include/ecl/geometry/odometry_helper.hpp
  **/
 /*****************************************************************************
 ** Ifdefs
 *****************************************************************************/
 
-#ifndef ECL_STATISTICS_HPP_
-#define ECL_STATISTICS_HPP_
+#ifndef ECL_ODOMETRY_ODOMETRY_HPP_
+#define ECL_ODOMETRY_ODOMETRY_HPP_
 
 /*****************************************************************************
 ** Includes
 *****************************************************************************/
 
-#include "statistics/covariance_ellipsoid.hpp"
-#include "statistics/cumulative_statistics.hpp"
+#include "odometry_typedefs.hpp"
+#include "odometry_helper.hpp"
 
-#endif /* ECL_STATISTICS_HPP_ */
-
-
+#endif /*ECL_ODOMETRY_ODOMETRY_HPP_*/
