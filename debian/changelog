@@ -1,7 +1,0 @@
-ros-indigo-ecl-statistics (0.61.15-0saucy) saucy; urgency=high
-
-  * Class added for computing cumulative means and variances
-
- -- Daniel Stonier <d.stonier@gmail.com>  Tue, 08 Nov 2016 15:00:00 -0000
-
-
