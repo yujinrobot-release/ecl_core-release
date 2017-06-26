@@ -1,0 +1,13 @@
+ros-indigo-ecl-converters (0.61.18-0trusty) trusty; urgency=high
+
+  * disable byte array failed size test in release mode (debug exceptions only)
+
+ -- Daniel Stonier <d.stonier@gmail.com>  Mon, 26 Jun 2017 04:00:00 -0000
+
+ros-indigo-ecl-converters (0.61.4-0trusty) trusty; urgency=high
+
+  * fix byte array converter error handling in release mode
+
+ -- Daniel Stonier <d.stonier@gmail.com>  Sat, 10 Oct 2015 04:00:00 -0000
+
+
