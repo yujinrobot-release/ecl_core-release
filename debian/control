@@ -1,0 +1,12 @@
+Source: ros-melodic-ecl-core
+Section: misc
+Priority: extra
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-melodic-catkin
+Homepage: http://www.ros.org/wiki/ecl_core
+Standards-Version: 3.9.2
+
+Package: ros-melodic-ecl-core
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-melodic-ecl-command-line, ros-melodic-ecl-concepts, ros-melodic-ecl-containers, ros-melodic-ecl-converters, ros-melodic-ecl-core-apps, ros-melodic-ecl-devices, ros-melodic-ecl-eigen, ros-melodic-ecl-exceptions, ros-melodic-ecl-formatters, ros-melodic-ecl-geometry, ros-melodic-ecl-ipc, ros-melodic-ecl-linear-algebra, ros-melodic-ecl-math, ros-melodic-ecl-mpl, ros-melodic-ecl-sigslots, ros-melodic-ecl-statistics, ros-melodic-ecl-streams, ros-melodic-ecl-threads, ros-melodic-ecl-time, ros-melodic-ecl-type-traits, ros-melodic-ecl-utilities
+Description: A set of tools and interfaces extending the capabilities of c++ to provide a lightweight, consistent interface with a focus for control programming.
