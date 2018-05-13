@@ -1,0 +1,12 @@
+Source: ros-melodic-ecl-filesystem
+Section: misc
+Priority: extra
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-melodic-catkin, ros-melodic-ecl-build, ros-melodic-ecl-config, ros-melodic-ecl-errors, ros-melodic-ecl-exceptions, ros-melodic-ecl-license
+Homepage: http://wiki.ros.org/ecl_filesystem
+Standards-Version: 3.9.2
+
+Package: ros-melodic-ecl-filesystem
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-melodic-ecl-build, ros-melodic-ecl-config, ros-melodic-ecl-errors, ros-melodic-ecl-exceptions, ros-melodic-ecl-license
+Description: Cross platform filesystem utilities (until c++11 makes its way in).
