@@ -1,0 +1,12 @@
+Source: ros-melodic-ecl-statistics
+Section: misc
+Priority: extra
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-melodic-catkin, ros-melodic-ecl-build, ros-melodic-ecl-config, ros-melodic-ecl-license, ros-melodic-ecl-linear-algebra, ros-melodic-ecl-mpl, ros-melodic-ecl-type-traits
+Homepage: http://wiki.ros.org/ecl_statistics
+Standards-Version: 3.9.2
+
+Package: ros-melodic-ecl-statistics
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-melodic-ecl-build, ros-melodic-ecl-config, ros-melodic-ecl-license, ros-melodic-ecl-linear-algebra, ros-melodic-ecl-mpl, ros-melodic-ecl-type-traits
+Description: Common statistical structures and algorithms for control systems.
