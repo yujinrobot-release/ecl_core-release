@@ -1,3 +1,49 @@
+## ecl_core (melodic) - 0.62.1-0
+
+The packages in the `ecl_core` repository were released into the `melodic` distro by running `/usr/bin/bloom-release --track melodic --rosdistro melodic ecl_core` on `Sun, 13 May 2018 19:56:46 -0000`
+
+These packages were released:
+- `ecl_command_line`
+- `ecl_concepts`
+- `ecl_containers`
+- `ecl_converters`
+- `ecl_core`
+- `ecl_core_apps`
+- `ecl_devices`
+- `ecl_eigen`
+- `ecl_exceptions`
+- `ecl_filesystem`
+- `ecl_formatters`
+- `ecl_geometry`
+- `ecl_ipc`
+- `ecl_linear_algebra`
+- `ecl_math`
+- `ecl_mpl`
+- `ecl_sigslots`
+- `ecl_statistics`
+- `ecl_streams`
+- `ecl_threads`
+- `ecl_time`
+- `ecl_type_traits`
+- `ecl_utilities`
+
+Version of package(s) in repository `ecl_core`:
+
+- upstream repository: https://github.com/stonier/ecl_core.git
+- release repository: https://github.com/yujinrobot-release/ecl_core-release.git
+- rosdistro version: `0.62.0-0`
+- old version: `0.62.0-0`
+- new version: `0.62.1-0`
+
+Versions of tools used:
+
+- bloom version: `0.6.4`
+- catkin_pkg version: `0.4.2`
+- rosdep version: `0.11.8`
+- rosdistro version: `0.6.2`
+- vcstools version: `0.1.40`
+
+
 ## ecl_core (melodic) - 0.62.0-0
 
 The packages in the `ecl_core` repository were released into the `melodic` distro by running `/usr/bin/bloom-release --track melodic --rosdistro melodic ecl_core` on `Sun, 13 May 2018 03:53:26 -0000`
