@@ -1,0 +1,12 @@
+Source: ros-melodic-ecl-type-traits
+Section: misc
+Priority: extra
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-melodic-catkin, ros-melodic-ecl-config, ros-melodic-ecl-license, ros-melodic-ecl-mpl
+Homepage: http://wiki.ros.org/ecl_type_traits
+Standards-Version: 3.9.2
+
+Package: ros-melodic-ecl-type-traits
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-melodic-ecl-config, ros-melodic-ecl-license, ros-melodic-ecl-mpl
+Description: Extends c++ type traits and implements a few more to boot.
