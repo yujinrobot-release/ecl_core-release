@@ -1,0 +1,12 @@
+Source: ros-melodic-ecl-linear-algebra
+Section: misc
+Priority: extra
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-melodic-catkin, ros-melodic-ecl-build, ros-melodic-ecl-converters, ros-melodic-ecl-eigen, ros-melodic-ecl-exceptions, ros-melodic-ecl-formatters, ros-melodic-ecl-license, ros-melodic-ecl-math, ros-melodic-sophus
+Homepage: http://wiki.ros.org/ecl_linear_algebra
+Standards-Version: 3.9.2
+
+Package: ros-melodic-ecl-linear-algebra
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-melodic-ecl-build, ros-melodic-ecl-converters, ros-melodic-ecl-eigen, ros-melodic-ecl-exceptions, ros-melodic-ecl-formatters, ros-melodic-ecl-license, ros-melodic-ecl-math, ros-melodic-sophus
+Description: Ecl frontend to a linear matrix package (currently eigen).
