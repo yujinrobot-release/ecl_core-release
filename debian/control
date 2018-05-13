@@ -1,0 +1,13 @@
+Source: ros-melodic-ecl-time
+Section: misc
+Priority: extra
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-melodic-catkin, ros-melodic-ecl-build, ros-melodic-ecl-config, ros-melodic-ecl-errors, ros-melodic-ecl-exceptions, ros-melodic-ecl-license, ros-melodic-ecl-time-lite
+Homepage: http://wiki.ros.org/ecl_time
+Standards-Version: 3.9.2
+
+Package: ros-melodic-ecl-time
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-melodic-ecl-build, ros-melodic-ecl-config, ros-melodic-ecl-errors, ros-melodic-ecl-exceptions, ros-melodic-ecl-license, ros-melodic-ecl-time-lite
+Description: Timing utilities are very dependent on the system api provided for their use.
+ This package provides a means for handling different timing models. Current support - posix rt : complete. - macosx : posix timers only, missing absolute timers. - win : none.
