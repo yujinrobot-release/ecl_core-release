@@ -1,0 +1,13 @@
+Source: ros-melodic-ecl-geometry
+Section: misc
+Priority: extra
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-melodic-catkin, ros-melodic-ecl-build, ros-melodic-ecl-config, ros-melodic-ecl-containers, ros-melodic-ecl-exceptions, ros-melodic-ecl-formatters, ros-melodic-ecl-license, ros-melodic-ecl-linear-algebra, ros-melodic-ecl-math, ros-melodic-ecl-mpl, ros-melodic-ecl-type-traits
+Homepage: http://wiki.ros.org/ecl_geometry
+Standards-Version: 3.9.2
+
+Package: ros-melodic-ecl-geometry
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-melodic-ecl-build, ros-melodic-ecl-config, ros-melodic-ecl-containers, ros-melodic-ecl-exceptions, ros-melodic-ecl-formatters, ros-melodic-ecl-license, ros-melodic-ecl-linear-algebra, ros-melodic-ecl-math, ros-melodic-ecl-mpl, ros-melodic-ecl-type-traits
+Description: Any tools relating to mathematical geometry.
+ Primarily featuring polynomials and interpolations.
