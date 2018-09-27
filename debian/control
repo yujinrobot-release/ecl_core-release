@@ -1,0 +1,13 @@
+Source: ros-bouncy-ecl-command-line
+Section: misc
+Priority: extra
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-bouncy-ament-cmake-gtest, ros-bouncy-ament-cmake-ros, ros-bouncy-ament-lint-auto, ros-bouncy-ament-lint-common, ros-bouncy-ecl-build, ros-bouncy-ecl-license, ros-bouncy-ros-workspace
+Homepage: http://wiki.ros.org/ecl_command_line
+Standards-Version: 3.9.2
+
+Package: ros-bouncy-ecl-command-line
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-bouncy-ecl-license, ros-bouncy-ros-workspace
+Description: Embeds the TCLAP library inside the ecl.
+ This is a very convenient command line parser in templatised c++.
