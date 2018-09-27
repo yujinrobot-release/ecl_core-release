@@ -6,7 +6,6 @@
 *****************************************************************************/
 
 #include <cmath>
-#include <ecl/linear_algebra.hpp>
 #include "../../include/ecl/linear_algebra/sophus/interpolators.hpp"
 
 /*****************************************************************************
@@ -55,7 +54,6 @@ SlidingInterpolator::SlidingInterpolator(const Sophus::SE3f& T_a, const Sophus::
 }
 
 Sophus::SE3f SlidingInterpolator::operator()(const double& t) {
-  Sophus::SE3f T_b_rel_a = T_b*T_a.inverse();
   Eigen::Vector3f translation_a = T_a.inverse().translation();
   Eigen::Vector3f translation_b = T_b.inverse().translation();
   Eigen::Vector3f translation = translation_a + t*(translation_b - translation_a);

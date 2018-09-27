@@ -2,34 +2,41 @@
 # Cmake
 ##############################################################################
 
-cmake_minimum_required(VERSION 2.8.3)
+cmake_minimum_required(VERSION 3.5)
 project(ecl_formatters)
 
 ##############################################################################
-# Catkin
+# Find Packages
 ##############################################################################
 
-find_package(catkin REQUIRED COMPONENTS 
-    ecl_config
-    ecl_exceptions
-    ecl_converters
-    )
-catkin_package(
-        INCLUDE_DIRS include
-        LIBRARIES ${PROJECT_NAME}
-	CATKIN_DEPENDS 
-            ecl_config
-            ecl_exceptions
-            ecl_converters
-        )
-include_directories(include ${catkin_INCLUDE_DIRS})
+find_package(ament_cmake_ros REQUIRED)
+find_package(ecl_build REQUIRED)
+find_package(ecl_config REQUIRED)
+find_package(ecl_converters REQUIRED)
+find_package(ecl_exceptions REQUIRED)
 
 ##############################################################################
-# Actual project configuration
+# Project Configuration
+##############################################################################
+
+ament_package_xml()
+ecl_enable_cxx14_compiler()
+
+##############################################################################
+# Sources
 ##############################################################################
 
 add_subdirectory(include)
 add_subdirectory(src)
 
+##############################################################################
+# Exports
+##############################################################################
 
-
+ament_export_interfaces(HAS_LIBRARY_TARGET ${PROJECT_NAME})
+ament_export_dependencies(
+    ecl_config
+    ecl_converters
+    ecl_exceptions
+)
+ament_package()

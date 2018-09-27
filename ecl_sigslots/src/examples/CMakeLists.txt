@@ -1,11 +1,23 @@
 ##############################################################################
-# Files
+# Macros
 ##############################################################################
 
-add_executable(demo_sigslots_manager sigslots_manager.cpp)
-target_link_libraries(demo_sigslots_manager ${catkin_LIBRARIES})
-install(TARGETS demo_sigslots_manager RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})
+macro(ecl_sigslots_add_demo name)
+  add_executable(ecl_demo_${name} ${name}.cpp)
+  target_link_libraries(
+    ecl_demo_${name}
+    PUBLIC
+      ${PROJECT_NAME}
+      ecl_config::ecl_config
+      ecl_threads::ecl_threads
+  )
+  set_target_properties(ecl_demo_${name} PROPERTIES OUTPUT_NAME demo_${name})
+  install(TARGETS ecl_demo_${name} RUNTIME DESTINATION lib/${PROJECT_NAME})
+endmacro()
 
-add_executable(demo_sigslots sigslots.cpp)
-target_link_libraries(demo_sigslots ${catkin_LIBRARIES})
-install(TARGETS demo_sigslots RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})
+##############################################################################
+# Executables
+##############################################################################
+
+ecl_sigslots_add_demo(sigslots)
+ecl_sigslots_add_demo(sigslots_manager)

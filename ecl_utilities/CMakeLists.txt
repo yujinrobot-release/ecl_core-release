@@ -2,26 +2,65 @@
 # Cmake
 ##############################################################################
 
-cmake_minimum_required(VERSION 2.8.3)
+cmake_minimum_required(VERSION 3.5)
 project(ecl_utilities)
 
 ##############################################################################
-# Catkin
+# Find Packages
 ##############################################################################
 
-find_package(catkin REQUIRED COMPONENTS ecl_mpl ecl_concepts)
-catkin_package(
-        INCLUDE_DIRS include
-	CATKIN_DEPENDS ecl_mpl ecl_concepts
-        )
-include_directories(include ${catkin_INCLUDE_DIRS})
+find_package(ament_cmake_ros REQUIRED)
+find_package(ecl_build REQUIRED)
+find_package(ecl_concepts REQUIRED)
+find_package(ecl_mpl REQUIRED)
 
 ##############################################################################
-# Actual project configuration
+# Project Configuration
+##############################################################################
+
+ament_package_xml()
+ecl_enable_cxx14_compiler()
+
+##############################################################################
+# Header Library Targets
+##############################################################################
+
+add_library(${PROJECT_NAME} INTERFACE)
+
+target_link_libraries(
+  ${PROJECT_NAME}
+  INTERFACE
+    ecl_concepts::ecl_concepts
+    ecl_mpl::ecl_mpl
+)
+
+target_include_directories(
+  ${PROJECT_NAME}
+  INTERFACE
+    $<BUILD_INTERFACE:${PROJECT_SOURCE_DIR}/include>
+    $<INSTALL_INTERFACE:include>
+)
+
+install(TARGETS ${PROJECT_NAME} EXPORT ${PROJECT_NAME}
+  RUNTIME DESTINATION bin
+  ARCHIVE DESTINATION lib
+  LIBRARY DESTINATION lib
+)
+
+##############################################################################
+# Sources
 ##############################################################################
 
 add_subdirectory(include)
 add_subdirectory(src)
 
+##############################################################################
+# Exports
+##############################################################################
 
-
+ament_export_interfaces(HAS_LIBRARY_TARGET ${PROJECT_NAME})
+ament_export_dependencies(
+    ecl_concepts
+    ecl_mpl
+)
+ament_package()

@@ -2,18 +2,23 @@
 # Cmake
 ##############################################################################
 
-cmake_minimum_required(VERSION 2.8.3)
+cmake_minimum_required(VERSION 3.5)
 project(ecl_filesystem)
 
 ##############################################################################
-# Thread Detection
+# Find Packages
 ##############################################################################
 
-find_package(catkin REQUIRED COMPONENTS
-    ecl_build
-    ecl_config
-    ecl_errors
-    )
+find_package(ament_cmake_ros REQUIRED)
+find_package(ecl_build REQUIRED)
+find_package(ecl_config REQUIRED)
+find_package(ecl_errors REQUIRED)
+
+##############################################################################
+# Project Configuration
+##############################################################################
+
+ament_package_xml()
 
 # This finds the platform specific filesystem libraries and sets them in the
 # variable ECL_PLATFORM_FILESYSTEM_LIBRARIES. Right now this is super simple
@@ -21,25 +26,25 @@ find_package(catkin REQUIRED COMPONENTS
 # appropriate dependencies need to be listed in catkin_package's DEPENDS.
 ecl_detect_filesystem()
 
-##############################################################################
-# Catkin
-##############################################################################
-
-catkin_package(
-    INCLUDE_DIRS include
-    LIBRARIES ${PROJECT_NAME}
-	CATKIN_DEPENDS
-            ecl_config
-            ecl_errors
-)
-include_directories(include ${CATKIN_DEVEL_PREFIX}/include ${catkin_INCLUDE_DIRS})
+ecl_enable_cxx14_compiler()
 
 ##############################################################################
-# Actual project configuration
+# Sources
 ##############################################################################
 
 add_subdirectory(include)
 add_subdirectory(src)
 
+##############################################################################
+# Exports
+##############################################################################
 
+# Do we need to export ${ECL_PLATFORM_FILESYSTEM_LIBRARIES} or does that
+# automagically get covered by the exported target with target_link_libraries?
 
+ament_export_interfaces(HAS_LIBRARY_TARGET ${PROJECT_NAME})
+ament_export_dependencies(
+    ecl_config
+    ecl_errors
+)
+ament_package()

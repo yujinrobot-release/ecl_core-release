@@ -6,47 +6,24 @@ cmake_minimum_required(VERSION 3.5)
 project(ecl_linear_algebra)
 
 ##############################################################################
-# Catkin
+# ament
 ##############################################################################
 
-find_package(catkin
-    REQUIRED
-    COMPONENTS
-        ecl_build
-        ecl_eigen
-        ecl_exceptions
-        ecl_formatters
-        ecl_math
-)
+find_package(ament_cmake_ros REQUIRED)
+find_package(ecl_build REQUIRED)
+find_package(ecl_eigen REQUIRED)
+find_package(ecl_exceptions REQUIRED)
+find_package(ecl_formatters REQUIRED)
+find_package(ecl_math REQUIRED)
 
 find_package(Sophus REQUIRED)
-
-##############################################################################
-# Exports
-##############################################################################
-
-# For the catkin 'DEPENDS' export
-get_target_property(Sophus_INCLUDE_DIRS Sophus::Sophus INTERFACE_INCLUDE_DIRECTORIES)
-
-catkin_package(
-    INCLUDE_DIRS include
-    LIBRARIES ${PROJECT_NAME}
-    CATKIN_DEPENDS
-        ecl_build
-        ecl_eigen
-        ecl_exceptions
-        ecl_formatters
-        ecl_math
-    DEPENDS
-        Sophus  # not actually setting Sophus_INCLUDE_DIRS here
-    )
 
 ##############################################################################
 # Project Configuration
 ##############################################################################
 
-ecl_enable_cxx11_compiler()
-include_directories(include ${catkin_INCLUDE_DIRS} ${sophus_INCLUDE_DIRS})
+ament_package_xml()
+ecl_enable_cxx14_compiler()
 
 ##############################################################################
 # Sources
@@ -55,5 +32,16 @@ include_directories(include ${catkin_INCLUDE_DIRS} ${sophus_INCLUDE_DIRS})
 add_subdirectory(include)
 add_subdirectory(src)
 
+##############################################################################
+# Exports
+##############################################################################
 
-
+ament_export_interfaces(HAS_LIBRARY_TARGET ${PROJECT_NAME})
+ament_export_dependencies(
+    ecl_eigen
+    ecl_exceptions
+    ecl_formatters
+    ecl_math
+    Sophus
+)
+ament_package()
