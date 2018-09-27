@@ -1,0 +1,13 @@
+Source: ros-bouncy-ecl-converters
+Section: misc
+Priority: extra
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-bouncy-ament-cmake-gtest, ros-bouncy-ament-cmake-ros, ros-bouncy-ament-lint-auto, ros-bouncy-ament-lint-common, ros-bouncy-ecl-build, ros-bouncy-ecl-concepts, ros-bouncy-ecl-config, ros-bouncy-ecl-errors, ros-bouncy-ecl-exceptions, ros-bouncy-ecl-license, ros-bouncy-ecl-mpl, ros-bouncy-ecl-type-traits, ros-bouncy-ros-workspace
+Homepage: http://wiki.ros.org/ecl_converters
+Standards-Version: 3.9.2
+
+Package: ros-bouncy-ecl-converters
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-bouncy-ecl-concepts, ros-bouncy-ecl-config, ros-bouncy-ecl-errors, ros-bouncy-ecl-exceptions, ros-bouncy-ecl-license, ros-bouncy-ecl-mpl, ros-bouncy-ecl-type-traits, ros-bouncy-ros-workspace
+Description: Some fast/convenient type converters, mostly for char strings or strings.
+ These are not really fully fleshed out, alot of them could use the addition for the whole range of fundamental types (e.g. all integers, not just int, unsigned int). They will come as the need arises.
