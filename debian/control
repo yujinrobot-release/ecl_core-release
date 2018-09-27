@@ -1,0 +1,13 @@
+Source: ros-bouncy-ecl-sigslots
+Section: misc
+Priority: extra
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-bouncy-ament-cmake-gtest, ros-bouncy-ament-cmake-ros, ros-bouncy-ament-lint-auto, ros-bouncy-ament-lint-common, ros-bouncy-ecl-build, ros-bouncy-ecl-config, ros-bouncy-ecl-license, ros-bouncy-ecl-threads, ros-bouncy-ros-workspace
+Homepage: http://ros.org/wiki/ecl_sigslots
+Standards-Version: 3.9.2
+
+Package: ros-bouncy-ecl-sigslots
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-bouncy-ecl-config, ros-bouncy-ecl-license, ros-bouncy-ecl-threads, ros-bouncy-ros-workspace
+Description: Provides a signal/slot mechanism (in the same vein as qt sigslots, boost::signals etc for intra-process communication.
+ These include some improvements - they do not need a preprocessor, are fully type safe, allow for simple connections via a posix style string identifier and are multithread-safe.
