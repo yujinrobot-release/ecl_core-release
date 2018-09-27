@@ -1,0 +1,12 @@
+Source: ros-bouncy-ecl-statistics
+Section: misc
+Priority: extra
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-bouncy-ament-cmake-gtest, ros-bouncy-ament-cmake-ros, ros-bouncy-ament-lint-auto, ros-bouncy-ament-lint-common, ros-bouncy-ecl-build, ros-bouncy-ecl-config, ros-bouncy-ecl-license, ros-bouncy-ecl-linear-algebra, ros-bouncy-ecl-mpl, ros-bouncy-ecl-type-traits, ros-bouncy-ros-workspace
+Homepage: http://wiki.ros.org/ecl_statistics
+Standards-Version: 3.9.2
+
+Package: ros-bouncy-ecl-statistics
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-bouncy-ecl-build, ros-bouncy-ecl-config, ros-bouncy-ecl-license, ros-bouncy-ecl-linear-algebra, ros-bouncy-ecl-mpl, ros-bouncy-ecl-type-traits, ros-bouncy-ros-workspace
+Description: Common statistical structures and algorithms for control systems.
