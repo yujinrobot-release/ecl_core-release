@@ -1,0 +1,13 @@
+Source: ros-crystal-ecl-formatters
+Section: misc
+Priority: extra
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-crystal-ament-cmake-ros, ros-crystal-ecl-build, ros-crystal-ecl-config, ros-crystal-ecl-converters, ros-crystal-ecl-exceptions, ros-crystal-ecl-license, ros-crystal-ros-workspace
+Homepage: http://wiki.ros.org/ecl_formatters
+Standards-Version: 3.9.2
+
+Package: ros-crystal-ecl-formatters
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-crystal-ecl-config, ros-crystal-ecl-converters, ros-crystal-ecl-exceptions, ros-crystal-ecl-license, ros-crystal-ros-workspace
+Description: The formatters here simply format various input types to a specified text format.
+ They can be used with most streaming types (including both ecl and stl streams).
