@@ -1,0 +1,13 @@
+Source: ros-crystal-ecl-command-line
+Section: misc
+Priority: extra
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-crystal-ament-cmake-gtest, ros-crystal-ament-cmake-ros, ros-crystal-ament-lint-auto, ros-crystal-ament-lint-common, ros-crystal-ecl-build, ros-crystal-ecl-license, ros-crystal-ros-workspace
+Homepage: http://wiki.ros.org/ecl_command_line
+Standards-Version: 3.9.2
+
+Package: ros-crystal-ecl-command-line
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-crystal-ecl-license, ros-crystal-ros-workspace
+Description: Embeds the TCLAP library inside the ecl.
+ This is a very convenient command line parser in templatised c++.
