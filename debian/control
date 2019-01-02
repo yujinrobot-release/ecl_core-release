@@ -1,0 +1,12 @@
+Source: ros-crystal-ecl-linear-algebra
+Section: misc
+Priority: extra
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-crystal-ament-cmake-gtest, ros-crystal-ament-cmake-ros, ros-crystal-ament-lint-auto, ros-crystal-ament-lint-common, ros-crystal-ecl-build, ros-crystal-ecl-converters, ros-crystal-ecl-eigen, ros-crystal-ecl-exceptions, ros-crystal-ecl-formatters, ros-crystal-ecl-license, ros-crystal-ecl-math, ros-crystal-sophus, ros-crystal-ros-workspace
+Homepage: http://wiki.ros.org/ecl_linear_algebra
+Standards-Version: 3.9.2
+
+Package: ros-crystal-ecl-linear-algebra
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-crystal-ecl-build, ros-crystal-ecl-converters, ros-crystal-ecl-eigen, ros-crystal-ecl-exceptions, ros-crystal-ecl-formatters, ros-crystal-ecl-license, ros-crystal-ecl-math, ros-crystal-sophus, ros-crystal-ros-workspace
+Description: Ecl frontend to a linear matrix package (currently eigen).
