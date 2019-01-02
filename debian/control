@@ -1,0 +1,13 @@
+Source: ros-crystal-ecl-mpl
+Section: misc
+Priority: extra
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-crystal-ament-cmake-gtest, ros-crystal-ament-cmake-ros, ros-crystal-ament-lint-auto, ros-crystal-ament-lint-common, ros-crystal-ecl-license, ros-crystal-ros-workspace
+Homepage: http://wiki.ros.org/ecl_mpl
+Standards-Version: 3.9.2
+
+Package: ros-crystal-ecl-mpl
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-crystal-ecl-license, ros-crystal-ros-workspace
+Description: Metaprogramming tools move alot of runtime calculations to be shifted to compile time.
+ This has only very elementary structures at this stage.
