@@ -1,0 +1,12 @@
+Source: ros-crystal-ecl-utilities
+Section: misc
+Priority: extra
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-crystal-ament-cmake-gtest, ros-crystal-ament-cmake-ros, ros-crystal-ament-lint-auto, ros-crystal-ament-lint-common, ros-crystal-ecl-build, ros-crystal-ecl-concepts, ros-crystal-ecl-license, ros-crystal-ecl-mpl, ros-crystal-ros-workspace
+Homepage: http://wiki.ros.org/ecl_utilities
+Standards-Version: 3.9.2
+
+Package: ros-crystal-ecl-utilities
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-crystal-ecl-concepts, ros-crystal-ecl-license, ros-crystal-ecl-mpl, ros-crystal-ros-workspace
+Description: Includes various supporting tools and utilities for c++ programming.
