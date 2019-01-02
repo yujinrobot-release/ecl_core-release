@@ -1,0 +1,12 @@
+Source: ros-crystal-ecl-core
+Section: misc
+Priority: extra
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-crystal-ament-cmake-ros, ros-crystal-ros-workspace
+Homepage: http://www.ros.org/wiki/ecl_core
+Standards-Version: 3.9.2
+
+Package: ros-crystal-ecl-core
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-crystal-ecl-command-line, ros-crystal-ecl-concepts, ros-crystal-ecl-containers, ros-crystal-ecl-converters, ros-crystal-ecl-core-apps, ros-crystal-ecl-devices, ros-crystal-ecl-eigen, ros-crystal-ecl-exceptions, ros-crystal-ecl-formatters, ros-crystal-ecl-geometry, ros-crystal-ecl-ipc, ros-crystal-ecl-linear-algebra, ros-crystal-ecl-math, ros-crystal-ecl-mpl, ros-crystal-ecl-sigslots, ros-crystal-ecl-statistics, ros-crystal-ecl-streams, ros-crystal-ecl-threads, ros-crystal-ecl-time, ros-crystal-ecl-type-traits, ros-crystal-ecl-utilities, ros-crystal-ros-workspace
+Description: A set of tools and interfaces extending the capabilities of c++ to provide a lightweight, consistent interface with a focus for control programming.
