@@ -1,0 +1,13 @@
+Source: ros-crystal-ecl-containers
+Section: misc
+Priority: extra
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-crystal-ament-cmake-gtest, ros-crystal-ament-cmake-ros, ros-crystal-ament-lint-auto, ros-crystal-ament-lint-common, ros-crystal-ecl-build, ros-crystal-ecl-config, ros-crystal-ecl-converters, ros-crystal-ecl-errors, ros-crystal-ecl-exceptions, ros-crystal-ecl-formatters, ros-crystal-ecl-license, ros-crystal-ecl-mpl, ros-crystal-ecl-type-traits, ros-crystal-ecl-utilities, ros-crystal-ros-workspace
+Homepage: http://wiki.ros.org/ecl_containers
+Standards-Version: 3.9.2
+
+Package: ros-crystal-ecl-containers
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-crystal-ecl-config, ros-crystal-ecl-converters, ros-crystal-ecl-errors, ros-crystal-ecl-exceptions, ros-crystal-ecl-formatters, ros-crystal-ecl-license, ros-crystal-ecl-mpl, ros-crystal-ecl-type-traits, ros-crystal-ecl-utilities, ros-crystal-ros-workspace
+Description: The containers included here are intended to extend the stl containers.
+ In all cases, these implementations are designed to implement c++ conveniences and safety where speed is not sacrificed. Also includes techniques for memory debugging of common problems such as buffer overruns.
