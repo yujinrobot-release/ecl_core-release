@@ -1,3 +1,51 @@
+## ecl_core (crystal) - 1.0.1-0
+
+The packages in the `ecl_core` repository were released into the `crystal` distro by running `/usr/bin/bloom-release --track crystal --rosdistro crystal ecl_core` on `Wed, 02 Jan 2019 05:10:03 -0000`
+
+These packages were released:
+- `ecl_command_line`
+- `ecl_concepts`
+- `ecl_containers`
+- `ecl_converters`
+- `ecl_core`
+- `ecl_core_apps`
+- `ecl_devices`
+- `ecl_eigen`
+- `ecl_exceptions`
+- `ecl_filesystem`
+- `ecl_formatters`
+- `ecl_geometry`
+- `ecl_ipc`
+- `ecl_linear_algebra`
+- `ecl_manipulators`
+- `ecl_math`
+- `ecl_mobile_robot`
+- `ecl_mpl`
+- `ecl_sigslots`
+- `ecl_statistics`
+- `ecl_streams`
+- `ecl_threads`
+- `ecl_time`
+- `ecl_type_traits`
+- `ecl_utilities`
+
+Version of package(s) in repository `ecl_core`:
+
+- upstream repository: https://github.com/stonier/ecl_core.git
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `null`
+- new version: `1.0.1-0`
+
+Versions of tools used:
+
+- bloom version: `0.6.9`
+- catkin_pkg version: `0.4.9`
+- rosdep version: `0.13.0`
+- rosdistro version: `0.7.0`
+- vcstools version: `0.1.40`
+
+
 ## ecl_core (bouncy) - 1.0.0-0
 
 The packages in the `ecl_core` repository were released into the `bouncy` distro by running `/usr/bin/bloom-release --track bouncy --rosdistro bouncy ecl_core` on `Thu, 27 Sep 2018 19:50:08 -0000`
