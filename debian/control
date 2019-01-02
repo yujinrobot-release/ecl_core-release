@@ -1,0 +1,12 @@
+Source: ros-crystal-ecl-concepts
+Section: misc
+Priority: extra
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-crystal-ament-cmake-gtest, ros-crystal-ament-cmake-ros, ros-crystal-ament-lint-auto, ros-crystal-ament-lint-common, ros-crystal-ecl-build, ros-crystal-ecl-config, ros-crystal-ecl-license, ros-crystal-ecl-type-traits, ros-crystal-ros-workspace
+Homepage: http://wiki.ros.org/ecl_concepts
+Standards-Version: 3.9.2
+
+Package: ros-crystal-ecl-concepts
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-crystal-ecl-config, ros-crystal-ecl-license, ros-crystal-ecl-type-traits, ros-crystal-ros-workspace
+Description: Introduces a compile time concept checking mechanism that can be used most commonly to check for required functionality when passing template arguments.
