@@ -1,0 +1,13 @@
+Source: ros-crystal-ecl-core-apps
+Section: misc
+Priority: extra
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-crystal-ament-cmake-ros, ros-crystal-ecl-build, ros-crystal-ecl-command-line, ros-crystal-ecl-config, ros-crystal-ecl-containers, ros-crystal-ecl-converters, ros-crystal-ecl-devices, ros-crystal-ecl-errors, ros-crystal-ecl-exceptions, ros-crystal-ecl-formatters, ros-crystal-ecl-geometry, ros-crystal-ecl-ipc, ros-crystal-ecl-license, ros-crystal-ecl-linear-algebra, ros-crystal-ecl-sigslots, ros-crystal-ecl-streams, ros-crystal-ecl-threads, ros-crystal-ecl-time-lite, ros-crystal-ecl-type-traits, ros-crystal-ros-workspace
+Homepage: http://wiki.ros.org/ecl_core_apps
+Standards-Version: 3.9.2
+
+Package: ros-crystal-ecl-core-apps
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-crystal-ecl-build, ros-crystal-ecl-command-line, ros-crystal-ecl-config, ros-crystal-ecl-containers, ros-crystal-ecl-converters, ros-crystal-ecl-devices, ros-crystal-ecl-errors, ros-crystal-ecl-exceptions, ros-crystal-ecl-formatters, ros-crystal-ecl-geometry, ros-crystal-ecl-ipc, ros-crystal-ecl-license, ros-crystal-ecl-linear-algebra, ros-crystal-ecl-sigslots, ros-crystal-ecl-streams, ros-crystal-ecl-threads, ros-crystal-ecl-time-lite, ros-crystal-ecl-type-traits, ros-crystal-ros-workspace
+Description: This includes a suite of programs demo'ing various aspects of the ecl_core.
+ It also includes various benchmarking and utility programs for use primarily with embedded systems.
