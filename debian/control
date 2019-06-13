@@ -1,0 +1,13 @@
+Source: ros-dashing-ecl-containers
+Section: misc
+Priority: extra
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-dashing-ament-cmake-gtest, ros-dashing-ament-cmake-ros, ros-dashing-ament-lint-auto, ros-dashing-ament-lint-common, ros-dashing-ecl-build, ros-dashing-ecl-config, ros-dashing-ecl-converters, ros-dashing-ecl-errors, ros-dashing-ecl-exceptions, ros-dashing-ecl-formatters, ros-dashing-ecl-license, ros-dashing-ecl-mpl, ros-dashing-ecl-type-traits, ros-dashing-ecl-utilities, ros-dashing-ros-workspace
+Homepage: http://wiki.ros.org/ecl_containers
+Standards-Version: 3.9.2
+
+Package: ros-dashing-ecl-containers
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-dashing-ecl-config, ros-dashing-ecl-converters, ros-dashing-ecl-errors, ros-dashing-ecl-exceptions, ros-dashing-ecl-formatters, ros-dashing-ecl-license, ros-dashing-ecl-mpl, ros-dashing-ecl-type-traits, ros-dashing-ecl-utilities, ros-dashing-ros-workspace
+Description: The containers included here are intended to extend the stl containers.
+ In all cases, these implementations are designed to implement c++ conveniences and safety where speed is not sacrificed. Also includes techniques for memory debugging of common problems such as buffer overruns.
