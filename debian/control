@@ -1,0 +1,13 @@
+Source: ros-dashing-ecl-core-apps
+Section: misc
+Priority: extra
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-dashing-ament-cmake-ros, ros-dashing-ecl-build, ros-dashing-ecl-command-line, ros-dashing-ecl-config, ros-dashing-ecl-containers, ros-dashing-ecl-converters, ros-dashing-ecl-devices, ros-dashing-ecl-errors, ros-dashing-ecl-exceptions, ros-dashing-ecl-formatters, ros-dashing-ecl-geometry, ros-dashing-ecl-ipc, ros-dashing-ecl-license, ros-dashing-ecl-linear-algebra, ros-dashing-ecl-sigslots, ros-dashing-ecl-streams, ros-dashing-ecl-threads, ros-dashing-ecl-time-lite, ros-dashing-ecl-type-traits, ros-dashing-ros-workspace
+Homepage: http://wiki.ros.org/ecl_core_apps
+Standards-Version: 3.9.2
+
+Package: ros-dashing-ecl-core-apps
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-dashing-ecl-build, ros-dashing-ecl-command-line, ros-dashing-ecl-config, ros-dashing-ecl-containers, ros-dashing-ecl-converters, ros-dashing-ecl-devices, ros-dashing-ecl-errors, ros-dashing-ecl-exceptions, ros-dashing-ecl-formatters, ros-dashing-ecl-geometry, ros-dashing-ecl-ipc, ros-dashing-ecl-license, ros-dashing-ecl-linear-algebra, ros-dashing-ecl-sigslots, ros-dashing-ecl-streams, ros-dashing-ecl-threads, ros-dashing-ecl-time-lite, ros-dashing-ecl-type-traits, ros-dashing-ros-workspace
+Description: This includes a suite of programs demo'ing various aspects of the ecl_core.
+ It also includes various benchmarking and utility programs for use primarily with embedded systems.
