@@ -1,0 +1,12 @@
+Source: ros-dashing-ecl-linear-algebra
+Section: misc
+Priority: extra
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-dashing-ament-cmake-gtest, ros-dashing-ament-cmake-ros, ros-dashing-ament-lint-auto, ros-dashing-ament-lint-common, ros-dashing-ecl-build, ros-dashing-ecl-converters, ros-dashing-ecl-eigen, ros-dashing-ecl-exceptions, ros-dashing-ecl-formatters, ros-dashing-ecl-license, ros-dashing-ecl-math, ros-dashing-sophus, ros-dashing-ros-workspace
+Homepage: http://wiki.ros.org/ecl_linear_algebra
+Standards-Version: 3.9.2
+
+Package: ros-dashing-ecl-linear-algebra
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-dashing-ecl-build, ros-dashing-ecl-converters, ros-dashing-ecl-eigen, ros-dashing-ecl-exceptions, ros-dashing-ecl-formatters, ros-dashing-ecl-license, ros-dashing-ecl-math, ros-dashing-sophus, ros-dashing-ros-workspace
+Description: Ecl frontend to a linear matrix package (currently eigen).
