@@ -1,0 +1,13 @@
+Source: ros-dashing-ecl-geometry
+Section: misc
+Priority: extra
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-dashing-ament-cmake-gtest, ros-dashing-ament-cmake-ros, ros-dashing-ament-lint-auto, ros-dashing-ament-lint-common, ros-dashing-ecl-build, ros-dashing-ecl-config, ros-dashing-ecl-containers, ros-dashing-ecl-exceptions, ros-dashing-ecl-formatters, ros-dashing-ecl-license, ros-dashing-ecl-linear-algebra, ros-dashing-ecl-math, ros-dashing-ecl-mpl, ros-dashing-ecl-type-traits, ros-dashing-ros-workspace
+Homepage: http://wiki.ros.org/ecl_geometry
+Standards-Version: 3.9.2
+
+Package: ros-dashing-ecl-geometry
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-dashing-ecl-build, ros-dashing-ecl-config, ros-dashing-ecl-containers, ros-dashing-ecl-exceptions, ros-dashing-ecl-formatters, ros-dashing-ecl-license, ros-dashing-ecl-linear-algebra, ros-dashing-ecl-math, ros-dashing-ecl-mpl, ros-dashing-ecl-type-traits, ros-dashing-ros-workspace
+Description: Any tools relating to mathematical geometry.
+ Primarily featuring polynomials and interpolations.
