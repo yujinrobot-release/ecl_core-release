@@ -1,0 +1,12 @@
+Source: ros-dashing-ecl-concepts
+Section: misc
+Priority: extra
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-dashing-ament-cmake-gtest, ros-dashing-ament-cmake-ros, ros-dashing-ament-lint-auto, ros-dashing-ament-lint-common, ros-dashing-ecl-build, ros-dashing-ecl-config, ros-dashing-ecl-license, ros-dashing-ecl-type-traits, ros-dashing-ros-workspace
+Homepage: http://wiki.ros.org/ecl_concepts
+Standards-Version: 3.9.2
+
+Package: ros-dashing-ecl-concepts
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-dashing-ecl-config, ros-dashing-ecl-license, ros-dashing-ecl-type-traits, ros-dashing-ros-workspace
+Description: Introduces a compile time concept checking mechanism that can be used most commonly to check for required functionality when passing template arguments.
