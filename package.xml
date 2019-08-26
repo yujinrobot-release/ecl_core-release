@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package format="2">
   <name>ecl_mpl</name>
-  <version>1.0.1</version>
+  <version>1.0.3</version>
   <description>
     Metaprogramming tools move alot of runtime calculations to be shifted to
     compile time. This has only very elementary structures at this stage.
@@ -16,6 +16,7 @@
   <buildtool_depend>ament_cmake_ros</buildtool_depend>
 
   <build_depend>ecl_license</build_depend>
+  <build_depend>ecl_build</build_depend>
 
   <exec_depend>ecl_license</exec_depend>
 
