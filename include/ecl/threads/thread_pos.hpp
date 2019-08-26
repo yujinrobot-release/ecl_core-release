@@ -152,7 +152,7 @@ private:
 	typename F::type &function;
 };
 
-}; // namespace threads
+} // namespace threads
 
 /*****************************************************************************
 ** Interface [Thread]
@@ -243,7 +243,9 @@ public:
 		thread_task(NULL),
 		has_started(false),
 		join_requested(false)
-	{}
+	{
+		(void) schedule_parameters;
+	}
 	/**
 	 * @brief Convenience constructor that starts a new thread with a void global/static function.
 	 *
@@ -493,7 +495,7 @@ Error Thread::start(const F &function, const Priority &priority, const long &sta
     return Error(NoError);
 }
 
-}; // namespace ecl
+} // namespace ecl
 
 #endif /* ECL_IS_POSIX */
 #endif /* ECL_THREADS_THREAD_POS_HPP_ */
