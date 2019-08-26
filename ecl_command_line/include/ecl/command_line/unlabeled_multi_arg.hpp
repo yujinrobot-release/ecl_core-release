@@ -260,7 +260,7 @@ bool UnlabeledMultiArg<T>::processArg(int *i, std::vector<std::string>& args)
 }
 
 template<class T>
-std::string UnlabeledMultiArg<T>::shortID(const std::string& val) const
+std::string UnlabeledMultiArg<T>::shortID(const std::string& /*val*/) const
 {
 	std::string id = "<" + _typeDesc + "> ...";
 
@@ -268,7 +268,7 @@ std::string UnlabeledMultiArg<T>::shortID(const std::string& val) const
 }
 
 template<class T>
-std::string UnlabeledMultiArg<T>::longID(const std::string& val) const
+std::string UnlabeledMultiArg<T>::longID(const std::string& /*val*/) const
 {
 	std::string id = "<" + _typeDesc + ">  (accepted multiple times)";
 
@@ -290,6 +290,6 @@ void UnlabeledMultiArg<T>::addToList( std::list<Arg*>& argList ) const
 	argList.push_back( const_cast<Arg*>(static_cast<const Arg* const>(this)) );
 }
 
-}; // namespace ecl
+} // namespace ecl
 
 #endif
