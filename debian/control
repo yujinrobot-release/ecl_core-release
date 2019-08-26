@@ -1,0 +1,13 @@
+Source: ros-dashing-ecl-formatters
+Section: misc
+Priority: extra
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-dashing-ament-cmake-ros, ros-dashing-ecl-build, ros-dashing-ecl-config, ros-dashing-ecl-converters, ros-dashing-ecl-exceptions, ros-dashing-ecl-license, ros-dashing-ros-workspace
+Homepage: http://wiki.ros.org/ecl_formatters
+Standards-Version: 3.9.2
+
+Package: ros-dashing-ecl-formatters
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-dashing-ecl-config, ros-dashing-ecl-converters, ros-dashing-ecl-exceptions, ros-dashing-ecl-license, ros-dashing-ros-workspace
+Description: The formatters here simply format various input types to a specified text format.
+ They can be used with most streaming types (including both ecl and stl streams).
