@@ -1,0 +1,13 @@
+Source: ros-dashing-ecl-mobile-robot
+Section: misc
+Priority: extra
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-dashing-ament-cmake-gtest, ros-dashing-ament-cmake-ros, ros-dashing-ament-lint-auto, ros-dashing-ament-lint-common, ros-dashing-ecl-build, ros-dashing-ecl-errors, ros-dashing-ecl-formatters, ros-dashing-ecl-geometry, ros-dashing-ecl-license, ros-dashing-ecl-linear-algebra, ros-dashing-ecl-math, ros-dashing-ros-workspace
+Homepage: http://wiki.ros.org/ecl_mobile_robot
+Standards-Version: 3.9.2
+
+Package: ros-dashing-ecl-mobile-robot
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-dashing-ecl-build, ros-dashing-ecl-errors, ros-dashing-ecl-formatters, ros-dashing-ecl-geometry, ros-dashing-ecl-license, ros-dashing-ecl-linear-algebra, ros-dashing-ecl-math, ros-dashing-ros-workspace
+Description: Contains transforms (e.g.
+ differential drive inverse kinematics) for the various types of mobile robot platforms.
