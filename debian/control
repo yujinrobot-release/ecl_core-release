@@ -1,0 +1,12 @@
+Source: ros-dashing-ecl-devices
+Section: misc
+Priority: extra
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-dashing-ament-cmake-gtest, ros-dashing-ament-cmake-ros, ros-dashing-ament-lint-auto, ros-dashing-ament-lint-common, ros-dashing-ecl-build, ros-dashing-ecl-config, ros-dashing-ecl-containers, ros-dashing-ecl-errors, ros-dashing-ecl-license, ros-dashing-ecl-mpl, ros-dashing-ecl-threads, ros-dashing-ecl-type-traits, ros-dashing-ecl-utilities, ros-dashing-ros-workspace
+Homepage: http://wiki.ros.org/ecl_devices
+Standards-Version: 3.9.2
+
+Package: ros-dashing-ecl-devices
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-dashing-ecl-config, ros-dashing-ecl-containers, ros-dashing-ecl-errors, ros-dashing-ecl-license, ros-dashing-ecl-mpl, ros-dashing-ecl-threads, ros-dashing-ecl-type-traits, ros-dashing-ecl-utilities, ros-dashing-ros-workspace
+Description: Provides an extensible and standardised framework for input-output devices.
