@@ -1,0 +1,13 @@
+Source: ros-dashing-ecl-threads
+Section: misc
+Priority: extra
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-dashing-ament-cmake-gtest, ros-dashing-ament-cmake-ros, ros-dashing-ament-lint-auto, ros-dashing-ament-lint-common, ros-dashing-ecl-build, ros-dashing-ecl-concepts, ros-dashing-ecl-config, ros-dashing-ecl-errors, ros-dashing-ecl-exceptions, ros-dashing-ecl-license, ros-dashing-ecl-time, ros-dashing-ecl-utilities, ros-dashing-ros-workspace
+Homepage: http://wiki.ros.org/ecl_threads
+Standards-Version: 3.9.2
+
+Package: ros-dashing-ecl-threads
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-dashing-ecl-build, ros-dashing-ecl-concepts, ros-dashing-ecl-config, ros-dashing-ecl-errors, ros-dashing-ecl-exceptions, ros-dashing-ecl-license, ros-dashing-ecl-time, ros-dashing-ecl-utilities, ros-dashing-ros-workspace
+Description: This package provides the c++ extensions for a variety of threaded programming tools.
+ These are usually different on different platforms, so the architecture for a cross-platform framework is also implemented.
