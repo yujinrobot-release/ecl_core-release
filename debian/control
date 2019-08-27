@@ -1,0 +1,12 @@
+Source: ros-dashing-ecl-core
+Section: misc
+Priority: extra
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-dashing-ament-cmake-ros, ros-dashing-ros-workspace
+Homepage: http://www.ros.org/wiki/ecl_core
+Standards-Version: 3.9.2
+
+Package: ros-dashing-ecl-core
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-dashing-ecl-command-line, ros-dashing-ecl-concepts, ros-dashing-ecl-containers, ros-dashing-ecl-converters, ros-dashing-ecl-core-apps, ros-dashing-ecl-devices, ros-dashing-ecl-eigen, ros-dashing-ecl-exceptions, ros-dashing-ecl-formatters, ros-dashing-ecl-geometry, ros-dashing-ecl-ipc, ros-dashing-ecl-linear-algebra, ros-dashing-ecl-math, ros-dashing-ecl-mpl, ros-dashing-ecl-sigslots, ros-dashing-ecl-statistics, ros-dashing-ecl-streams, ros-dashing-ecl-threads, ros-dashing-ecl-time, ros-dashing-ecl-type-traits, ros-dashing-ecl-utilities, ros-dashing-ros-workspace
+Description: A set of tools and interfaces extending the capabilities of c++ to provide a lightweight, consistent interface with a focus for control programming.
