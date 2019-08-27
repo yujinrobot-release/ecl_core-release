@@ -1,3 +1,51 @@
+## ecl_core (dashing) - 1.0.4-1
+
+The packages in the `ecl_core` repository were released into the `dashing` distro by running `/usr/bin/bloom-release --track dashing --rosdistro dashing ecl_core` on `Tue, 27 Aug 2019 15:49:53 -0000`
+
+These packages were released:
+- `ecl_command_line`
+- `ecl_concepts`
+- `ecl_containers`
+- `ecl_converters`
+- `ecl_core`
+- `ecl_core_apps`
+- `ecl_devices`
+- `ecl_eigen`
+- `ecl_exceptions`
+- `ecl_filesystem`
+- `ecl_formatters`
+- `ecl_geometry`
+- `ecl_ipc`
+- `ecl_linear_algebra`
+- `ecl_manipulators`
+- `ecl_math`
+- `ecl_mobile_robot`
+- `ecl_mpl`
+- `ecl_sigslots`
+- `ecl_statistics`
+- `ecl_streams`
+- `ecl_threads`
+- `ecl_time`
+- `ecl_type_traits`
+- `ecl_utilities`
+
+Version of package(s) in repository `ecl_core`:
+
+- upstream repository: https://github.com/stonier/ecl_core.git
+- release repository: https://github.com/yujinrobot-release/ecl_core-release.git
+- rosdistro version: `1.0.3-1`
+- old version: `1.0.3-1`
+- new version: `1.0.4-1`
+
+Versions of tools used:
+
+- bloom version: `0.8.0`
+- catkin_pkg version: `0.4.13`
+- rosdep version: `0.15.2`
+- rosdistro version: `0.7.4`
+- vcstools version: `0.1.40`
+
+
 ## ecl_core (dashing) - 1.0.3-1
 
 The packages in the `ecl_core` repository were released into the `dashing` distro by running `/usr/bin/bloom-release --track dashing --rosdistro dashing ecl_core` on `Mon, 26 Aug 2019 02:33:10 -0000`
