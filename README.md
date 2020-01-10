@@ -1,3 +1,51 @@
+## ecl_core (eloquent) - 1.0.5-1
+
+The packages in the `ecl_core` repository were released into the `eloquent` distro by running `/usr/bin/bloom-release --track eloquent --rosdistro eloquent ecl_core` on `Fri, 10 Jan 2020 14:22:07 -0000`
+
+These packages were released:
+- `ecl_command_line`
+- `ecl_concepts`
+- `ecl_containers`
+- `ecl_converters`
+- `ecl_core`
+- `ecl_core_apps`
+- `ecl_devices`
+- `ecl_eigen`
+- `ecl_exceptions`
+- `ecl_filesystem`
+- `ecl_formatters`
+- `ecl_geometry`
+- `ecl_ipc`
+- `ecl_linear_algebra`
+- `ecl_manipulators`
+- `ecl_math`
+- `ecl_mobile_robot`
+- `ecl_mpl`
+- `ecl_sigslots`
+- `ecl_statistics`
+- `ecl_streams`
+- `ecl_threads`
+- `ecl_time`
+- `ecl_type_traits`
+- `ecl_utilities`
+
+Version of package(s) in repository `ecl_core`:
+
+- upstream repository: https://github.com/stonier/ecl_core.git
+- release repository: https://github.com/yujinrobot-release/ecl_core-release.git
+- rosdistro version: `1.0.4-1`
+- old version: `1.0.4-1`
+- new version: `1.0.5-1`
+
+Versions of tools used:
+
+- bloom version: `0.9.0`
+- catkin_pkg version: `0.4.15`
+- rosdep version: `0.15.2`
+- rosdistro version: `0.7.5`
+- vcstools version: `0.1.42`
+
+
 ## ecl_core (eloquent) - 1.0.4-1
 
 The packages in the `ecl_core` repository were released into the `eloquent` distro by running `/usr/bin/bloom-release --edit-track --track eloquent --rosdistro eloquent ecl_core` on `Tue, 29 Oct 2019 16:10:15 -0000`
