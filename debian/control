@@ -1,0 +1,13 @@
+Source: ros-foxy-ecl-exceptions
+Section: misc
+Priority: optional
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-foxy-ament-cmake-ros, ros-foxy-ecl-build, ros-foxy-ecl-config, ros-foxy-ecl-errors, ros-foxy-ecl-license, ros-foxy-ros-workspace
+Homepage: http://wiki.ros.org/ecl_exceptions
+Standards-Version: 3.9.2
+
+Package: ros-foxy-ecl-exceptions
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-foxy-ecl-config, ros-foxy-ecl-errors, ros-foxy-ecl-license, ros-foxy-ros-workspace
+Description: Template based exceptions - these are simple and practical and avoid the proliferation of exception types.
+ Although not syntatactically ideal, it is convenient and eminently practical.
