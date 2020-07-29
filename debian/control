@@ -1,0 +1,12 @@
+Source: ros-noetic-ecl-filesystem
+Section: misc
+Priority: optional
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-noetic-catkin, ros-noetic-ecl-build, ros-noetic-ecl-config, ros-noetic-ecl-errors, ros-noetic-ecl-exceptions, ros-noetic-ecl-license
+Homepage: http://wiki.ros.org/ecl_filesystem
+Standards-Version: 3.9.2
+
+Package: ros-noetic-ecl-filesystem
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-noetic-ecl-build, ros-noetic-ecl-config, ros-noetic-ecl-errors, ros-noetic-ecl-exceptions, ros-noetic-ecl-license
+Description: Cross platform filesystem utilities (until c++11 makes its way in).
