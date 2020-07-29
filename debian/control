@@ -1,0 +1,13 @@
+Source: ros-noetic-ecl-geometry
+Section: misc
+Priority: optional
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-noetic-catkin, ros-noetic-ecl-build, ros-noetic-ecl-config, ros-noetic-ecl-containers, ros-noetic-ecl-exceptions, ros-noetic-ecl-formatters, ros-noetic-ecl-license, ros-noetic-ecl-linear-algebra, ros-noetic-ecl-math, ros-noetic-ecl-mpl, ros-noetic-ecl-type-traits
+Homepage: http://wiki.ros.org/ecl_geometry
+Standards-Version: 3.9.2
+
+Package: ros-noetic-ecl-geometry
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-noetic-ecl-build, ros-noetic-ecl-config, ros-noetic-ecl-containers, ros-noetic-ecl-exceptions, ros-noetic-ecl-formatters, ros-noetic-ecl-license, ros-noetic-ecl-linear-algebra, ros-noetic-ecl-math, ros-noetic-ecl-mpl, ros-noetic-ecl-type-traits
+Description: Any tools relating to mathematical geometry.
+ Primarily featuring polynomials and interpolations.
