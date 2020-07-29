@@ -1,0 +1,12 @@
+Source: ros-noetic-ecl-math
+Section: misc
+Priority: optional
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-noetic-catkin, ros-noetic-ecl-license, ros-noetic-ecl-type-traits
+Homepage: http://wiki.ros.org/ecl_math
+Standards-Version: 3.9.2
+
+Package: ros-noetic-ecl-math
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-noetic-ecl-license, ros-noetic-ecl-type-traits
+Description: This package provides simple support to cmath, filling in holes or redefining in a c++ formulation where desirable.
