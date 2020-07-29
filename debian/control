@@ -1,0 +1,12 @@
+Source: ros-noetic-ecl-utilities
+Section: misc
+Priority: optional
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-noetic-catkin, ros-noetic-ecl-concepts, ros-noetic-ecl-license, ros-noetic-ecl-mpl
+Homepage: http://wiki.ros.org/ecl_utilities
+Standards-Version: 3.9.2
+
+Package: ros-noetic-ecl-utilities
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-noetic-ecl-concepts, ros-noetic-ecl-license, ros-noetic-ecl-mpl
+Description: Includes various supporting tools and utilities for c++ programming.
