@@ -1,0 +1,12 @@
+Source: ros-noetic-ecl-type-traits
+Section: misc
+Priority: optional
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-noetic-catkin, ros-noetic-ecl-config, ros-noetic-ecl-license, ros-noetic-ecl-mpl
+Homepage: http://wiki.ros.org/ecl_type_traits
+Standards-Version: 3.9.2
+
+Package: ros-noetic-ecl-type-traits
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-noetic-ecl-config, ros-noetic-ecl-license, ros-noetic-ecl-mpl
+Description: Extends c++ type traits and implements a few more to boot.
