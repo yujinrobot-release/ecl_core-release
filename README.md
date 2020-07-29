@@ -1,3 +1,49 @@
+## ecl_core (noetic) - 0.62.3-1
+
+The packages in the `ecl_core` repository were released into the `noetic` distro by running `/usr/bin/bloom-release --track noetic --rosdistro noetic ecl_core` on `Wed, 29 Jul 2020 00:34:04 -0000`
+
+These packages were released:
+- `ecl_command_line`
+- `ecl_concepts`
+- `ecl_containers`
+- `ecl_converters`
+- `ecl_core`
+- `ecl_core_apps`
+- `ecl_devices`
+- `ecl_eigen`
+- `ecl_exceptions`
+- `ecl_filesystem`
+- `ecl_formatters`
+- `ecl_geometry`
+- `ecl_ipc`
+- `ecl_linear_algebra`
+- `ecl_math`
+- `ecl_mpl`
+- `ecl_sigslots`
+- `ecl_statistics`
+- `ecl_streams`
+- `ecl_threads`
+- `ecl_time`
+- `ecl_type_traits`
+- `ecl_utilities`
+
+Version of package(s) in repository `ecl_core`:
+
+- upstream repository: https://github.com/stonier/ecl_core.git
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `null`
+- new version: `0.62.3-1`
+
+Versions of tools used:
+
+- bloom version: `0.9.7`
+- catkin_pkg version: `0.4.22`
+- rosdep version: `0.19.0`
+- rosdistro version: `0.8.2`
+- vcstools version: `0.1.42`
+
+
 ## ecl_core (foxy) - 1.0.8-1
 
 The packages in the `ecl_core` repository were released into the `foxy` distro by running `/usr/bin/bloom-release --track foxy --rosdistro foxy ecl_core` on `Tue, 28 Jul 2020 22:26:23 -0000`
