@@ -1,0 +1,13 @@
+Source: ros-noetic-ecl-converters
+Section: misc
+Priority: optional
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-noetic-catkin, ros-noetic-ecl-concepts, ros-noetic-ecl-config, ros-noetic-ecl-errors, ros-noetic-ecl-exceptions, ros-noetic-ecl-license, ros-noetic-ecl-mpl, ros-noetic-ecl-type-traits
+Homepage: http://wiki.ros.org/ecl_converters
+Standards-Version: 3.9.2
+
+Package: ros-noetic-ecl-converters
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-noetic-ecl-concepts, ros-noetic-ecl-config, ros-noetic-ecl-errors, ros-noetic-ecl-exceptions, ros-noetic-ecl-license, ros-noetic-ecl-mpl, ros-noetic-ecl-type-traits
+Description: Some fast/convenient type converters, mostly for char strings or strings.
+ These are not really fully fleshed out, alot of them could use the addition for the whole range of fundamental types (e.g. all integers, not just int, unsigned int). They will come as the need arises.
