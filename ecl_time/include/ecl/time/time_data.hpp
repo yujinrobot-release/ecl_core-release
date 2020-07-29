@@ -18,7 +18,7 @@
 
 #include <vector>
 #include <ecl/config/macros.hpp>
-#include "duration.hpp"
+#include <ecl/time/duration.hpp>
 #include "macros.hpp"
 
 /*****************************************************************************

@@ -31,7 +31,6 @@ namespace converters {
 class ConverterBase {
 public:
 	ConverterBase() : error_handler(ecl::NoError) {};
-	virtual ~ConverterBase() {}  /** @brief Required virtual destructor **/
 	virtual Error error() const { return error_handler; }
 protected:
 	Error error_handler;
@@ -92,7 +91,7 @@ template <typename Output, typename Input>
 Output Converter<Output,Input>::operator ()(const Input &input)
 {
     return typename Output::Converter()(input);
-}
+};
 
 /**
  * The generalised fallback for converting various input types to a
@@ -107,9 +106,9 @@ template <typename Input>
 Output Converter<Output,void>::operator ()(const Input &input)
 {
     return typename Output::Converter()(input);
-}
+};
 
-} // namespace ecl
+}; // Namespace ecl
 
 
 #endif /* ECL_CONVERTERS_CONVERTER_HPP_ */

@@ -1,6 +1,6 @@
 ###############################################################################
-# Tests
+# GTEST SETUP
 ###############################################################################
 
-# currently broken
-# ament_add_gtest(test_command_line command_line.cpp)
+# Currently broken.
+#catkin_add_gtest(test_command_line command_line.cpp)

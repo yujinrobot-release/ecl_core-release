@@ -116,7 +116,7 @@ class Converter<char,void>  :
         using Converter<char,unsigned int>::operator();
 };
 
-} // namespace ecl
+}; // Namespace ecl
 
 
 #endif /*ECL_CONVERTERS_CHAR_HPP_*/

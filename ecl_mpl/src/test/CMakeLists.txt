@@ -2,4 +2,4 @@
 # Gtests
 ###############################################################################
 
-ament_add_gtest(test_enable_if enable_if.cpp)
+catkin_add_gtest(test_enable_if enable_if.cpp)

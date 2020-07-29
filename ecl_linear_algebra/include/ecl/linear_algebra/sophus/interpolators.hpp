@@ -1,5 +1,5 @@
 /**
- * @file include/ecl/sophus/interpolators.hpp
+ * @file /yocs_math_toolkit/include/yocs_math_toolkit/sophus/interpolators.hpp
  **/
 /*****************************************************************************
 ** Ifdefs
@@ -13,6 +13,7 @@
 *****************************************************************************/
 
 #include <ecl/exceptions/standard_exception.hpp>
+#include <ecl/linear_algebra.hpp>
 #include <iomanip>
 #include <iostream>
 #include <sophus/se3.hpp>

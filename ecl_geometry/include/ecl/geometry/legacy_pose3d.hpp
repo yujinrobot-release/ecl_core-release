@@ -124,8 +124,6 @@ public:
             rot(RotationMatrix::Identity()),
             trans(Translation::Zero())
         {
-                (void) angle_axis;
-                (void) translation;
                 /* TODO */
         }
         /**

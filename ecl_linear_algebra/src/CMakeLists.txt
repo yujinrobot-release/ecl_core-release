@@ -3,9 +3,6 @@
 ###############################################################################
 
 add_subdirectory(lib)
-
-if(BUILD_TESTING)
-  find_package(ament_lint_auto REQUIRED)
-  ament_lint_auto_find_test_dependencies()
+if(CATKIN_ENABLE_TESTING)
   add_subdirectory(test)
 endif()

@@ -21,6 +21,9 @@
 #include <cstdlib>
 #include <ecl/config.hpp>
 
+#if defined(ECL_IS_WIN32)
+  getpid = _getpid
+#endif
 
 /*****************************************************************************
 ** Namespaces
@@ -109,13 +112,7 @@ private:
   {
     unsigned long a = clock();
     unsigned long b = ::time(NULL);
-
-#if defined(ECL_IS_WIN32)
-	unsigned long c = GetCurrentProcessId();
-#else
-	unsigned long c = getpid();
-#endif
-
+    unsigned long c = getpid();
     a=a-b;  a=a-c;  a=a^(c >> 13);
     b=b-c;  b=b-a;  b=b^(a << 8);
     c=c-a;  c=c-b;  c=c^(b >> 13);

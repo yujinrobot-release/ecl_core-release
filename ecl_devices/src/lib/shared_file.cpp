@@ -120,7 +120,7 @@ bool SharedFileManager::DeRegisterSharedFile(const std::string& name) {
     return true;
 }
 
-} // namespace devices
+}; // namespace Interfaces
 
 /*****************************************************************************
 ** Using
@@ -144,11 +144,7 @@ SharedFile::SharedFile(const std::string &name, WriteMode mode) :
 
 SharedFile::~SharedFile() {
 	ecl_try {
-	        if (shared_instance->error_handler.flag() == NoError) {
-	            devices::SharedFileManager::DeRegisterSharedFile( shared_instance->file.filename() );
-	        } else {
-	            delete shared_instance;
-	        }
+		devices::SharedFileManager::DeRegisterSharedFile( shared_instance->file.filename() );
 	} ecl_catch( StandardException &e ) {
 		// Never throw from a destructor!
 		// use some other mechanism!!!
@@ -160,15 +156,13 @@ bool SharedFile::open(const std::string &name, WriteMode mode) {
 	ecl_try {
 		shared_instance = devices::SharedFileManager::RegisterSharedFile(name,mode);
 		if ( shared_instance == NULL ) {
-                        shared_instance = new devices::SharedFileCommon();
-                        shared_instance->error_handler = OpenError;
+			shared_instance->error_handler = OpenError;
 			return false;
 		} else {
 			shared_instance->error_handler = NoError;
 			return true;
 		}
 	} ecl_catch ( StandardException &e ) {
-	        shared_instance = new devices::SharedFileCommon();
 		shared_instance->error_handler = OpenError;
 		ecl_throw(StandardException(LOC,e));
 	}
@@ -216,4 +210,4 @@ bool SharedFile::flush() {
 }
 
 
-} // namespace ecl
+}; // namespace ecl

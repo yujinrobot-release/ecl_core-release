@@ -128,7 +128,7 @@ public:
 };
 
 
-} // namespace ecl
+}; // Namespace ecl
 
 
 #endif /*ECL_CONVERTERS_STRINGS_HPP_*/

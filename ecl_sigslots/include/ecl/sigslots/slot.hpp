@@ -116,7 +116,7 @@ public:
 	 *
 	 * @param slot : the object to be copied.
 	 */
-	Slot(const Slot<Data>& slot) {
+	Slot(const Slot& slot) {
 		*this = slot;
 		sigslot->incrHandles();
 	}
@@ -133,12 +133,6 @@ public:
 		if ( sigslot->handles() == 0 ) {
 			delete sigslot;
 		}
-	}
-	/**
-	 * @brief Default assignment operator.
-	 */
-	void operator=( const Slot<Data>& slot) {
-		sigslot = slot.sigslot;
 	}
 	/**
 	 * @brief Lists the topics this slot is connected to.
@@ -245,7 +239,7 @@ public:
 	 *
 	 * @param slot : the object to be copied.
 	 */
-	Slot(const Slot<Void>& slot) {
+	Slot(const Slot& slot) {
 		*this = slot;
 		sigslot->incrHandles();
 	}
@@ -261,12 +255,6 @@ public:
 		if ( sigslot->handles() == 0 ) {
 			delete sigslot;
 		}
-	}
-	/**
-	 * @brief Default assignment operator.
-	 */
-	void operator=( const Slot<Void>& slot) {
-		sigslot = slot.sigslot;
 	}
 	/**
 	 * @brief Make a connection to the specified topic.

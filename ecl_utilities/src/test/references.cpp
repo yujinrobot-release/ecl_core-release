@@ -55,12 +55,8 @@ TEST(Reference,usage) {
 }
 
 TEST(Reference,traits) {
-    // Workaround for undefined reference error. Why it happens if used
-    // directly in the gtest macros, I haven't root caused.
-    bool result1 = is_reference_wrapper< ReferenceWrapper<int> >::value;
-	EXPECT_TRUE(result1);
-    bool result2 = is_reference_wrapper<int>::value;
-	EXPECT_FALSE(result2);
+	EXPECT_TRUE(is_reference_wrapper< ReferenceWrapper<int> >::value);
+	EXPECT_FALSE(is_reference_wrapper<int>::value);
 }
 
 TEST(Reference,functions) {

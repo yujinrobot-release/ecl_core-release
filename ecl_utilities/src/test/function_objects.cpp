@@ -42,7 +42,6 @@ public:
 //	    std::cout << "Member function with no arguments." << std::endl;;
 	}
 	void f(const int &i) {
-		(void)i;
 		result = 1;
 //	    std::cout << "Member function with argument: " << i << std::endl;;
 	}
@@ -51,7 +50,6 @@ public:
 //	    std::cout << "Member function" << std::endl;;
 	}
 	void h(const int& i) {
-		(void)i;
 		result = 3;
 //	    std::cout << "Member function with ref argument: " << i << std::endl;;
 	}
@@ -76,7 +74,6 @@ int rnf2() {
 }
 
 void ruf1(const int &i) {
-	(void)i;
 	free_result = 2;
 //    std::cout << "Free unary function with argument: " << i << std::endl;;
 }

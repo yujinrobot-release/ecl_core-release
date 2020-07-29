@@ -110,6 +110,6 @@ template <typename T> class Parameter {
         T parameter;
 };
 
-} // namespace ecl
+}; // Namespace ecl
 
 #endif /*ECL_UTILITIES_PARAMETER_HPP_*/

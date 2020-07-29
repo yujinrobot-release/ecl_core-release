@@ -40,3 +40,15 @@ TEST(FilesystemTests,realpath) {
 }
 
 #endif /* ECL_PRIVATE_HAS_POSIX_REALPATH */
+
+/*****************************************************************************
+** Main program
+*****************************************************************************/
+
+int main(int argc, char **argv) {
+
+    testing::InitGoogleTest(&argc,argv);
+    return RUN_ALL_TESTS();
+}
+
+
