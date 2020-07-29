@@ -1,0 +1,12 @@
+Source: ros-noetic-ecl-linear-algebra
+Section: misc
+Priority: optional
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-noetic-catkin, ros-noetic-ecl-build, ros-noetic-ecl-converters, ros-noetic-ecl-eigen, ros-noetic-ecl-exceptions, ros-noetic-ecl-formatters, ros-noetic-ecl-license, ros-noetic-ecl-math, ros-noetic-sophus
+Homepage: http://wiki.ros.org/ecl_linear_algebra
+Standards-Version: 3.9.2
+
+Package: ros-noetic-ecl-linear-algebra
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-noetic-ecl-build, ros-noetic-ecl-converters, ros-noetic-ecl-eigen, ros-noetic-ecl-exceptions, ros-noetic-ecl-formatters, ros-noetic-ecl-license, ros-noetic-ecl-math, ros-noetic-sophus
+Description: Ecl frontend to a linear matrix package (currently eigen).
