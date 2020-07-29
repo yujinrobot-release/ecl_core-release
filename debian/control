@@ -1,0 +1,13 @@
+Source: ros-noetic-ecl-core-apps
+Section: misc
+Priority: optional
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-noetic-catkin, ros-noetic-ecl-build, ros-noetic-ecl-command-line, ros-noetic-ecl-config, ros-noetic-ecl-containers, ros-noetic-ecl-converters, ros-noetic-ecl-devices, ros-noetic-ecl-errors, ros-noetic-ecl-exceptions, ros-noetic-ecl-formatters, ros-noetic-ecl-geometry, ros-noetic-ecl-ipc, ros-noetic-ecl-license, ros-noetic-ecl-linear-algebra, ros-noetic-ecl-sigslots, ros-noetic-ecl-streams, ros-noetic-ecl-threads, ros-noetic-ecl-time-lite, ros-noetic-ecl-type-traits
+Homepage: http://wiki.ros.org/ecl_core_apps
+Standards-Version: 3.9.2
+
+Package: ros-noetic-ecl-core-apps
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-noetic-ecl-build, ros-noetic-ecl-command-line, ros-noetic-ecl-config, ros-noetic-ecl-containers, ros-noetic-ecl-converters, ros-noetic-ecl-devices, ros-noetic-ecl-errors, ros-noetic-ecl-exceptions, ros-noetic-ecl-formatters, ros-noetic-ecl-geometry, ros-noetic-ecl-ipc, ros-noetic-ecl-license, ros-noetic-ecl-linear-algebra, ros-noetic-ecl-sigslots, ros-noetic-ecl-streams, ros-noetic-ecl-threads, ros-noetic-ecl-time-lite, ros-noetic-ecl-type-traits
+Description: This includes a suite of programs demo'ing various aspects of the ecl_core.
+ It also includes various benchmarking and utility programs for use primarily with embedded systems.
