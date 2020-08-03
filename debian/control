@@ -1,0 +1,12 @@
+Source: ros-foxy-ecl-core
+Section: misc
+Priority: optional
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-foxy-ament-cmake-ros, ros-foxy-ros-workspace
+Homepage: http://www.ros.org/wiki/ecl_core
+Standards-Version: 3.9.2
+
+Package: ros-foxy-ecl-core
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-foxy-ecl-command-line, ros-foxy-ecl-concepts, ros-foxy-ecl-containers, ros-foxy-ecl-converters, ros-foxy-ecl-core-apps, ros-foxy-ecl-devices, ros-foxy-ecl-eigen, ros-foxy-ecl-exceptions, ros-foxy-ecl-formatters, ros-foxy-ecl-geometry, ros-foxy-ecl-ipc, ros-foxy-ecl-linear-algebra, ros-foxy-ecl-math, ros-foxy-ecl-mpl, ros-foxy-ecl-sigslots, ros-foxy-ecl-statistics, ros-foxy-ecl-streams, ros-foxy-ecl-threads, ros-foxy-ecl-time, ros-foxy-ecl-type-traits, ros-foxy-ecl-utilities, ros-foxy-ros-workspace
+Description: A set of tools and interfaces extending the capabilities of c++ to provide a lightweight, consistent interface with a focus for control programming.
