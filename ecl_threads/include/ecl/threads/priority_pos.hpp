@@ -185,7 +185,7 @@ inline StandardException ECL_LOCAL throwPriorityException(const char* loc ) {
 }
 
 
-}; // namespace threads
+} // namespace threads
 } // namespace ecl
 #endif /* ECL_HAS_EXCEPTIONS */
 #endif /* ECL_IS_POSIX */
@@ -193,7 +193,7 @@ inline StandardException ECL_LOCAL throwPriorityException(const char* loc ) {
 
 
 //        void yield();
-//        void capabilities();
+//        void capabilities() throw(StandardException);
 
 
 ///*
@@ -209,7 +209,7 @@ inline StandardException ECL_LOCAL throwPriorityException(const char* loc ) {
 ///*
 // * Print out the posix capabilities of your program.
 // */
-//inline void Process::capabilities()
+//inline void Process::capabilities() throw(StandardException)
 //{
 //    cap_t cap = cap_get_proc();
 //

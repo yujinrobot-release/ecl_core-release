@@ -68,6 +68,13 @@ public:
 		x(x_), y(y_), rotation(theta)
 	{}
 	Pose2D(const Pose2D& pose) : x(pose.x), y(pose.y), rotation(pose.rotation) {}
+
+	void operator=( const Pose2D& pose) {
+		x = pose.x;
+		y = pose.y;
+		rotation = pose.rotation;
+	}
+
 	Pose2D inverse() const {
 		double s = sin(rotation);
 		double c = cos(rotation);
@@ -262,6 +269,8 @@ ECL_DONT_INLINE vector<Duration> trigTest() {
 		d = angle1*angle2;
 		e = 3.315*angle1;
 	}
+        (void)d;
+        (void)e;
 	times.push_back(stopwatch.split());
 	return times;
 }
@@ -269,7 +278,7 @@ ECL_DONT_INLINE vector<Duration> trigTest() {
 ** Main
 *****************************************************************************/
 
-int main(int argc, char **argv) {
+int main(int /*argc*/, char** /*argv*/) {
 
 	try {
 		ecl::set_priority(ecl::RealTimePriority4);

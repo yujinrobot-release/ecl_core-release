@@ -13,9 +13,9 @@
 #include <iostream>
 #include <string>
 #include <ecl/devices/console.hpp>
-#include <ecl/streams/text_stream.hpp>
-#include <ecl/streams/console_streams.hpp>
-#include <ecl/streams/manipulators/end_of_line.hpp>
+#include "../../include/ecl/streams/text_stream.hpp"
+#include "../../include/ecl/streams/console_streams.hpp"
+#include "../../include/ecl/streams/manipulators/end_of_line.hpp"
 
 /*****************************************************************************
 ** Using
@@ -33,9 +33,9 @@ using ecl::OConsoleStream;
 ** Main
 *****************************************************************************/
 
-int main(int argc, char** argv) {
+int main(int /*argc*/, char** /*argv*/) {
 
-	bool test_istreams = false;
+  bool test_istreams = false;
 
     std::cout << std::endl;
     std::cout << "***********************************************************" << std::endl;

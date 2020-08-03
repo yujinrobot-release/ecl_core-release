@@ -42,11 +42,11 @@ using ecl::StandardException;
 
 int main()
 {
-	try {
-		ecl::set_priority(ecl::RealTimePriority4);
-	} catch ( StandardException &e ) {
-		// dont worry about it.
-	}
+    try {
+        ecl::set_priority(ecl::RealTimePriority4);
+    } catch ( StandardException &e ) {
+        // dont worry about it.
+    }
     StopWatch stopwatch;
     TimeStamp time_converters[10], time_sprintf[10], time_iostreams[10];
 
@@ -59,7 +59,6 @@ int main()
     char buffer[30];
     char* char_string;
     Converter<char*> toCharString;
-//    Converter<string> toString;
     ostringstream ostream;
 
     for (int j = 0; j < 50; ++j ) {
@@ -136,6 +135,7 @@ int main()
     char_string = toCharString(d);
     time_converters[4] = stopwatch.split();
 
+    (void)char_string;
 
     std::cout << std::endl;
     std::cout << "***********************************************************" << std::endl;

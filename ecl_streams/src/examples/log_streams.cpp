@@ -12,7 +12,7 @@
 #include <iostream>
 #include <string>
 #include <ecl/threads/thread.hpp>
-#include <ecl/streams/log_stream.hpp>
+#include "../../include/ecl/streams/log_stream.hpp"
 
 /*****************************************************************************
 ** Using
@@ -68,7 +68,7 @@ using namespace ecl::demos;
 ** Main
 *****************************************************************************/
 
-int main(int argc, char** argv) {
+int main(int /*argc*/, char** /*argv*/) {
 
     std::cout << std::endl;
     std::cout << "***********************************************************" << std::endl;

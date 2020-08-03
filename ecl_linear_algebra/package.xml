@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
-<package>
+<package format="2">
   <name>ecl_linear_algebra</name>
-  <version>0.62.3</version>
+  <version>1.0.9</version>
   <description>
      Ecl frontend to a linear matrix package (currently eigen).
   </description>
@@ -12,7 +12,8 @@
   <url type="bugtracker">https://github.com/stonier/ecl_core/issues</url>
   <author email="d.stonier@gmail.com">Daniel Stonier</author> -->
 
-  <buildtool_depend>catkin</buildtool_depend>
+  <buildtool_depend>ament_cmake_ros</buildtool_depend>
+
   <build_depend>ecl_build</build_depend>
   <build_depend>ecl_converters</build_depend>
   <build_depend>ecl_eigen</build_depend>
@@ -22,14 +23,22 @@
   <build_depend>ecl_math</build_depend>
   <build_depend>sophus</build_depend>
 
-  <run_depend>ecl_build</run_depend>
-  <run_depend>ecl_converters</run_depend>
-  <run_depend>ecl_eigen</run_depend>
-  <run_depend>ecl_exceptions</run_depend>
-  <run_depend>ecl_formatters</run_depend>
-  <run_depend>ecl_license</run_depend>
-  <run_depend>ecl_math</run_depend>
-  <run_depend>sophus</run_depend>
+  <exec_depend>ecl_build</exec_depend>
+  <exec_depend>ecl_converters</exec_depend>
+  <exec_depend>ecl_eigen</exec_depend>
+  <exec_depend>ecl_exceptions</exec_depend>
+  <exec_depend>ecl_formatters</exec_depend>
+  <exec_depend>ecl_license</exec_depend>
+  <exec_depend>ecl_math</exec_depend>
+  <exec_depend>sophus</exec_depend>
+
+  <test_depend>ament_cmake_gtest</test_depend>
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
 </package>
 
 

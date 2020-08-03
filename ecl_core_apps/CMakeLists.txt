@@ -2,40 +2,43 @@
 # Cmake
 ##############################################################################
 
-cmake_minimum_required(VERSION 2.8.3)
+cmake_minimum_required(VERSION 3.5)
 project(ecl_core_apps)
 
 ##############################################################################
-# Catkin
+# ament
 ##############################################################################
 
-find_package(catkin REQUIRED COMPONENTS 
-    ecl_build
-    ecl_config 
-    ecl_linear_algebra
-    ecl_command_line
-    ecl_converters
-    ecl_containers
-    ecl_devices
-    ecl_errors
-    ecl_exceptions
-    ecl_formatters
-    ecl_geometry
-    ecl_ipc
-    ecl_sigslots
-    ecl_streams
-    ecl_threads
-    ecl_type_traits
-    ecl_time_lite
-    )
-catkin_package()
+# Turn -isystem off. Actually like to see warnings from underlying packages
+# and regardless, have run into trouble because of the ordering it induces.
+set(CMAKE_NO_SYSTEM_FROM_IMPORTED TRUE)
+
+find_package(ament_cmake_ros REQUIRED)
+find_package(ecl_build REQUIRED)
+find_package(ecl_config  REQUIRED)
+find_package(ecl_linear_algebra REQUIRED)
+find_package(ecl_command_line REQUIRED)
+find_package(ecl_converters REQUIRED)
+find_package(ecl_containers REQUIRED)
+find_package(ecl_devices REQUIRED)
+find_package(ecl_errors REQUIRED)
+find_package(ecl_exceptions REQUIRED)
+find_package(ecl_formatters REQUIRED)
+find_package(ecl_geometry REQUIRED)
+find_package(ecl_ipc REQUIRED)
+find_package(ecl_sigslots REQUIRED)
+find_package(ecl_streams REQUIRED)
+find_package(ecl_threads REQUIRED)
+find_package(ecl_type_traits REQUIRED)
+find_package(ecl_time_lite REQUIRED)
 
 ##############################################################################
 # Project Configuration
 ##############################################################################
 
-include_directories(include ${catkin_INCLUDE_DIRS})
-ecl_enable_cxx11_compiler()
+ament_package_xml()
+ecl_enable_cxx14_compiler()
+ecl_enable_cxx_warnings()
 
 ##############################################################################
 # Sources
@@ -43,5 +46,8 @@ ecl_enable_cxx11_compiler()
 
 add_subdirectory(src)
 
+##############################################################################
+# Exports
+##############################################################################
 
-
+ament_package()

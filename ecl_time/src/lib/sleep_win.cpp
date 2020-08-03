@@ -44,21 +44,21 @@ Sleep::Sleep(const unsigned long &seconds) {
 
 void Sleep::operator ()() {
     TimeError result = sleep(required);
-    ecl_assert_throw( result == TimeError(NoError), time::throwSleepException(LOC) );
+	ecl_assert_throw(result == TimeError(NoError), time::throwSleepException(LOC));
 }
 
 void Sleep::operator ()(const Duration &duration) {
 	required.tv_sec = duration.sec();
 	required.tv_nsec = duration.nsec();
 	TimeError result = sleep(required);
-    ecl_assert_throw( result == TimeError(NoError), time::throwSleepException(LOC) );
+	ecl_assert_throw(result == TimeError(NoError), time::throwSleepException(LOC));
 }
 
 void Sleep::operator ()(const unsigned long &seconds) {
 	required.tv_sec = seconds;
 	required.tv_nsec = 0;
 	TimeError result = sleep(required);
-    ecl_assert_throw( result == TimeError(NoError), time::throwSleepException(LOC) );
+	ecl_assert_throw(result == TimeError(NoError), time::throwSleepException(LOC));
 }
 
 /*****************************************************************************
@@ -72,7 +72,7 @@ MilliSleep::MilliSleep(const unsigned long &milliseconds) {
 
 void MilliSleep::operator ()() {
 	TimeError result = sleep(required);
-    ecl_assert_throw( result == TimeError(NoError), time::throwSleepException(LOC) );
+	ecl_assert_throw(result == TimeError(NoError), time::throwSleepException(LOC));
 }
 
 void MilliSleep::operator ()(const unsigned long &milliseconds) {
@@ -80,7 +80,7 @@ void MilliSleep::operator ()(const unsigned long &milliseconds) {
 	required.tv_nsec = (milliseconds%1000)*1000000;
 //    required.tv_nsec = 1000000*milli_seconds;
 	TimeError result = sleep(required);
-    ecl_assert_throw( result == TimeError(NoError), time::throwSleepException(LOC) );
+	ecl_assert_throw(result == TimeError(NoError), time::throwSleepException(LOC));
 }
 
 /*****************************************************************************
@@ -94,13 +94,13 @@ MicroSleep::MicroSleep(const unsigned long &microseconds) {
 
 void MicroSleep::operator ()() {
 	TimeError result = sleep(required);
-    ecl_assert_throw( result == TimeError(NoError), time::throwSleepException(LOC) );
+	ecl_assert_throw(result == TimeError(NoError), time::throwSleepException(LOC));
 }
 
 void MicroSleep::operator ()(const unsigned long &micro_seconds) {
     required.tv_nsec = 1000*micro_seconds;
     TimeError result = sleep(required);
-    ecl_assert_throw( result == TimeError(NoError), time::throwSleepException(LOC) );
+	ecl_assert_throw(result == TimeError(NoError), time::throwSleepException(LOC));
 }
 
 /*****************************************************************************
@@ -114,13 +114,13 @@ NanoSleep::NanoSleep(const unsigned long &nanoseconds) {
 
 void NanoSleep::operator ()() {
 	TimeError result = sleep(required);
-    ecl_assert_throw( result == TimeError(NoError), time::throwSleepException(LOC) );
+	ecl_assert_throw(result == TimeError(NoError), time::throwSleepException(LOC));
 }
 
 void NanoSleep::operator ()(const unsigned long &nanoseconds) {
     required.tv_nsec = nanoseconds;
     TimeError result = sleep(required);
-    ecl_assert_throw( result == TimeError(NoError), time::throwSleepException(LOC) );
+	ecl_assert_throw(result == TimeError(NoError), time::throwSleepException(LOC));
 }
 
 } // namespace ecl

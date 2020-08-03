@@ -3,9 +3,28 @@
 ###############################################################################
 
 macro(ecl_add_benchmark name)
-  add_executable(bench_${name} ${name}.cpp)
-  target_link_libraries(bench_${name} ${catkin_LIBRARIES})
-  install(TARGETS bench_${name} RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})
+  add_executable(ecl_bench_${name} ${name}.cpp)
+  target_link_libraries(
+    ecl_bench_${name}
+    PRIVATE
+      ecl_config::ecl_config
+      ecl_command_line::ecl_command_line
+      ecl_converters::ecl_converters
+      ecl_containers::ecl_containers
+      ecl_devices::ecl_devices
+      ecl_errors::ecl_errors
+      ecl_exceptions::ecl_exceptions
+      ecl_formatters::ecl_formatters
+      ecl_geometry::ecl_geometry
+      ecl_ipc::ecl_ipc
+      ecl_linear_algebra::ecl_linear_algebra
+      ecl_sigslots::ecl_sigslots
+      ecl_streams::ecl_streams
+      ecl_threads::ecl_threads
+      ecl_time_lite::ecl_time_lite
+      ecl_type_traits::ecl_type_traits
+  )
+  install(TARGETS ecl_bench_${name} RUNTIME DESTINATION bin)
 endmacro()
 
 ###############################################################################

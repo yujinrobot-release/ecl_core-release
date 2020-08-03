@@ -2,10 +2,6 @@
 Changelog
 =========
 
-0.62.1 (2018-05-13)
--------------------
-* sophus update fixes
-
 0.61.8 (2016-01-10)
 -------------------
 * drop the c++11 transitive export flag, catkin installs dont support this

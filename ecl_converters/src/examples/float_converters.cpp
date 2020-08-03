@@ -8,12 +8,12 @@
 
 #include <iostream>
 #include "../../include/ecl/converters/char_strings.hpp"
+
 /*****************************************************************************
 ** Main
 *****************************************************************************/
 
-int main(int argc, char **argv) {
-
+int main(int /*argc*/, char** /*argv*/) {
 
     std::cout << std::endl;
     std::cout << "***********************************************************" << std::endl;

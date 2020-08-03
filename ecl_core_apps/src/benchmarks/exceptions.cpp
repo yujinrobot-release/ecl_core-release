@@ -66,6 +66,7 @@ void g1() {
 	for ( unsigned int j = 0; j < 5; ++j ) {
 		dude[j] = 3.15*543/230.235;
 	}
+        (void)dude;
 }
 
 void g2() {
@@ -74,6 +75,7 @@ void g2() {
 	for ( unsigned int j = 0; j < 5; ++j ) {
 		dude[j] = 3.15*543/230.235;
 	}
+        (void)dude;
 	if ( i == 1 ) {
 		throw StandardException(LOC,ConfigurationError, "Standard exception with an extra string message.");
 	}

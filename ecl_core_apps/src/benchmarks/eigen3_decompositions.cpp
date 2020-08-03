@@ -32,7 +32,7 @@ using Eigen::MatrixXf;
 ** Main
 *****************************************************************************/
 
-int main(int argc, char **argv) {
+int main(int /*argc*/, char** /*argv*/) {
 
 	const unsigned int repeats = 5;
 	try {
@@ -41,7 +41,7 @@ int main(int argc, char **argv) {
 		// dont worry about it.
 	}
     StopWatch stopwatch;
-    TimeStamp times[13];
+    TimeStamp times[14];
 
 	MatrixXf A = MatrixXf::Random(100,100);
 	MatrixXf b = MatrixXf::Identity(100,100);

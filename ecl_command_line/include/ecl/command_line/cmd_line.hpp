@@ -407,7 +407,9 @@ inline void CmdLine::parse(int argc, char** argv)
 	if ( requiredCount > _numRequired )
 		throw(CmdLineParseException("Too many arguments!"));
 
-	} catch ( ArgException e ) { _output->failure(*this,e); exit(1); }
+	} catch ( ArgException &e ) {
+		_output->failure(*this, e); exit(1);
+	}
 }
 
 inline bool CmdLine::_emptyCombined(const std::string& s)
@@ -482,6 +484,6 @@ inline bool CmdLine::hasHelpAndVersion()
 //End CmdLine.cpp
 ///////////////////////////////////////////////////////////////////////////////
 
-}; // namespace ecl
+} // namespace ecl
 
 #endif
