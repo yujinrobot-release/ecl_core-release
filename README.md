@@ -1,3 +1,51 @@
+## ecl_core (galactic) - 1.2.0-1
+
+The packages in the `ecl_core` repository were released into the `galactic` distro by running `/usr/bin/bloom-release --track galactic --rosdistro galactic ecl_core` on `Mon, 30 May 2022 15:58:28 -0000`
+
+These packages were released:
+- `ecl_command_line`
+- `ecl_concepts`
+- `ecl_containers`
+- `ecl_converters`
+- `ecl_core`
+- `ecl_core_apps`
+- `ecl_devices`
+- `ecl_eigen`
+- `ecl_exceptions`
+- `ecl_filesystem`
+- `ecl_formatters`
+- `ecl_geometry`
+- `ecl_ipc`
+- `ecl_linear_algebra`
+- `ecl_manipulators`
+- `ecl_math`
+- `ecl_mobile_robot`
+- `ecl_mpl`
+- `ecl_sigslots`
+- `ecl_statistics`
+- `ecl_streams`
+- `ecl_threads`
+- `ecl_time`
+- `ecl_type_traits`
+- `ecl_utilities`
+
+Version of package(s) in repository `ecl_core`:
+
+- upstream repository: https://github.com/stonier/ecl_core.git
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `null`
+- new version: `1.2.0-1`
+
+Versions of tools used:
+
+- bloom version: `0.11.1`
+- catkin_pkg version: `0.4.23`
+- rosdep version: `0.21.0`
+- rosdistro version: `0.8.3`
+- vcstools version: `0.1.42`
+
+
 ## ecl_core (foxy) - 1.2.0-1
 
 The packages in the `ecl_core` repository were released into the `foxy` distro by running `/usr/bin/bloom-release --edit-track --track foxy --rosdistro foxy ecl_core` on `Sat, 12 Sep 2020 15:24:19 -0000`
