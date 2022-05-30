@@ -1,0 +1,13 @@
+Source: ros-galactic-ecl-containers
+Section: misc
+Priority: optional
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-galactic-ament-cmake-gtest <!nocheck>, ros-galactic-ament-cmake-ros, ros-galactic-ament-lint-auto <!nocheck>, ros-galactic-ament-lint-common <!nocheck>, ros-galactic-ecl-build, ros-galactic-ecl-config, ros-galactic-ecl-converters, ros-galactic-ecl-errors, ros-galactic-ecl-exceptions, ros-galactic-ecl-formatters, ros-galactic-ecl-license, ros-galactic-ecl-mpl, ros-galactic-ecl-type-traits, ros-galactic-ecl-utilities, ros-galactic-ros-workspace
+Homepage: http://wiki.ros.org/ecl_containers
+Standards-Version: 3.9.2
+
+Package: ros-galactic-ecl-containers
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-galactic-ecl-config, ros-galactic-ecl-converters, ros-galactic-ecl-errors, ros-galactic-ecl-exceptions, ros-galactic-ecl-formatters, ros-galactic-ecl-license, ros-galactic-ecl-mpl, ros-galactic-ecl-type-traits, ros-galactic-ecl-utilities, ros-galactic-ros-workspace
+Description: The containers included here are intended to extend the stl containers.
+ In all cases, these implementations are designed to implement c++ conveniences and safety where speed is not sacrificed. Also includes techniques for memory debugging of common problems such as buffer overruns.
