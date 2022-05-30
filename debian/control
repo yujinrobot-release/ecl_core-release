@@ -1,0 +1,12 @@
+Source: ros-galactic-ecl-core
+Section: misc
+Priority: optional
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-galactic-ament-cmake-ros, ros-galactic-ros-workspace
+Homepage: http://www.ros.org/wiki/ecl_core
+Standards-Version: 3.9.2
+
+Package: ros-galactic-ecl-core
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-galactic-ecl-command-line, ros-galactic-ecl-concepts, ros-galactic-ecl-containers, ros-galactic-ecl-converters, ros-galactic-ecl-core-apps, ros-galactic-ecl-devices, ros-galactic-ecl-eigen, ros-galactic-ecl-exceptions, ros-galactic-ecl-formatters, ros-galactic-ecl-geometry, ros-galactic-ecl-ipc, ros-galactic-ecl-linear-algebra, ros-galactic-ecl-math, ros-galactic-ecl-mpl, ros-galactic-ecl-sigslots, ros-galactic-ecl-statistics, ros-galactic-ecl-streams, ros-galactic-ecl-threads, ros-galactic-ecl-time, ros-galactic-ecl-type-traits, ros-galactic-ecl-utilities, ros-galactic-ros-workspace
+Description: A set of tools and interfaces extending the capabilities of c++ to provide a lightweight, consistent interface with a focus for control programming.
