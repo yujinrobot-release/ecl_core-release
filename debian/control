@@ -1,0 +1,13 @@
+Source: ros-galactic-ecl-threads
+Section: misc
+Priority: optional
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-galactic-ament-cmake-gtest <!nocheck>, ros-galactic-ament-cmake-ros, ros-galactic-ament-lint-auto <!nocheck>, ros-galactic-ament-lint-common <!nocheck>, ros-galactic-ecl-build, ros-galactic-ecl-concepts, ros-galactic-ecl-config, ros-galactic-ecl-errors, ros-galactic-ecl-exceptions, ros-galactic-ecl-license, ros-galactic-ecl-time, ros-galactic-ecl-utilities, ros-galactic-ros-workspace
+Homepage: http://wiki.ros.org/ecl_threads
+Standards-Version: 3.9.2
+
+Package: ros-galactic-ecl-threads
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-galactic-ecl-build, ros-galactic-ecl-concepts, ros-galactic-ecl-config, ros-galactic-ecl-errors, ros-galactic-ecl-exceptions, ros-galactic-ecl-license, ros-galactic-ecl-time, ros-galactic-ecl-utilities, ros-galactic-ros-workspace
+Description: This package provides the c++ extensions for a variety of threaded programming tools.
+ These are usually different on different platforms, so the architecture for a cross-platform framework is also implemented.
