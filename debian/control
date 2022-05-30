@@ -1,0 +1,12 @@
+Source: ros-galactic-ecl-type-traits
+Section: misc
+Priority: optional
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-galactic-ament-cmake-gtest <!nocheck>, ros-galactic-ament-cmake-ros, ros-galactic-ament-lint-auto <!nocheck>, ros-galactic-ament-lint-common <!nocheck>, ros-galactic-ecl-build, ros-galactic-ecl-config, ros-galactic-ecl-license, ros-galactic-ecl-mpl, ros-galactic-ros-workspace
+Homepage: http://wiki.ros.org/ecl_type_traits
+Standards-Version: 3.9.2
+
+Package: ros-galactic-ecl-type-traits
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-galactic-ecl-config, ros-galactic-ecl-license, ros-galactic-ecl-mpl, ros-galactic-ros-workspace
+Description: Extends c++ type traits and implements a few more to boot.
