@@ -1,0 +1,12 @@
+Source: ros-galactic-ecl-manipulators
+Section: misc
+Priority: optional
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-galactic-ament-cmake-gtest <!nocheck>, ros-galactic-ament-cmake-ros, ros-galactic-ament-lint-auto <!nocheck>, ros-galactic-ament-lint-common <!nocheck>, ros-galactic-ecl-build, ros-galactic-ecl-exceptions, ros-galactic-ecl-formatters, ros-galactic-ecl-geometry, ros-galactic-ecl-license, ros-galactic-ros-workspace
+Homepage: http://wiki.ros.org/ecl_manipulators
+Standards-Version: 3.9.2
+
+Package: ros-galactic-ecl-manipulators
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-galactic-ecl-build, ros-galactic-ecl-exceptions, ros-galactic-ecl-formatters, ros-galactic-ecl-geometry, ros-galactic-ecl-license, ros-galactic-ros-workspace
+Description: Deploys various manipulation algorithms, currently just feedforward filters (interpolations).
