@@ -1,0 +1,12 @@
+Source: ros-galactic-ecl-streams
+Section: misc
+Priority: optional
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-galactic-ament-cmake-gtest <!nocheck>, ros-galactic-ament-cmake-ros, ros-galactic-ament-lint-auto <!nocheck>, ros-galactic-ament-lint-common <!nocheck>, ros-galactic-ecl-build, ros-galactic-ecl-concepts, ros-galactic-ecl-converters, ros-galactic-ecl-devices, ros-galactic-ecl-errors, ros-galactic-ecl-license, ros-galactic-ecl-time, ros-galactic-ecl-type-traits, ros-galactic-ros-workspace
+Homepage: http://wiki.ros.org/ecl_streams
+Standards-Version: 3.9.2
+
+Package: ros-galactic-ecl-streams
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-galactic-ecl-concepts, ros-galactic-ecl-converters, ros-galactic-ecl-devices, ros-galactic-ecl-errors, ros-galactic-ecl-license, ros-galactic-ecl-time, ros-galactic-ecl-type-traits, ros-galactic-ros-workspace
+Description: These are lightweight text streaming classes that connect to standardised ecl type devices.
