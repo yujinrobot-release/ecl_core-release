@@ -1,0 +1,12 @@
+Source: ros-galactic-ecl-linear-algebra
+Section: misc
+Priority: optional
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-galactic-ament-cmake-gtest <!nocheck>, ros-galactic-ament-cmake-ros, ros-galactic-ament-lint-auto <!nocheck>, ros-galactic-ament-lint-common <!nocheck>, ros-galactic-ecl-build, ros-galactic-ecl-converters, ros-galactic-ecl-eigen, ros-galactic-ecl-exceptions, ros-galactic-ecl-formatters, ros-galactic-ecl-license, ros-galactic-ecl-math, ros-galactic-sophus, ros-galactic-ros-workspace
+Homepage: http://wiki.ros.org/ecl_linear_algebra
+Standards-Version: 3.9.2
+
+Package: ros-galactic-ecl-linear-algebra
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-galactic-ecl-build, ros-galactic-ecl-converters, ros-galactic-ecl-eigen, ros-galactic-ecl-exceptions, ros-galactic-ecl-formatters, ros-galactic-ecl-license, ros-galactic-ecl-math, ros-galactic-sophus, ros-galactic-ros-workspace
+Description: Ecl frontend to a linear matrix package (currently eigen).
