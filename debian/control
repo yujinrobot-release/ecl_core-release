@@ -1,0 +1,12 @@
+Source: ros-galactic-ecl-utilities
+Section: misc
+Priority: optional
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-galactic-ament-cmake-gtest <!nocheck>, ros-galactic-ament-cmake-ros, ros-galactic-ament-lint-auto <!nocheck>, ros-galactic-ament-lint-common <!nocheck>, ros-galactic-ecl-build, ros-galactic-ecl-concepts, ros-galactic-ecl-license, ros-galactic-ecl-mpl, ros-galactic-ros-workspace
+Homepage: http://wiki.ros.org/ecl_utilities
+Standards-Version: 3.9.2
+
+Package: ros-galactic-ecl-utilities
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-galactic-ecl-concepts, ros-galactic-ecl-license, ros-galactic-ecl-mpl, ros-galactic-ros-workspace
+Description: Includes various supporting tools and utilities for c++ programming.
