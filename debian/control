@@ -1,0 +1,12 @@
+Source: ros-galactic-ecl-statistics
+Section: misc
+Priority: optional
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-galactic-ament-cmake-gtest <!nocheck>, ros-galactic-ament-cmake-ros, ros-galactic-ament-lint-auto <!nocheck>, ros-galactic-ament-lint-common <!nocheck>, ros-galactic-ecl-build, ros-galactic-ecl-config, ros-galactic-ecl-license, ros-galactic-ecl-linear-algebra, ros-galactic-ecl-mpl, ros-galactic-ecl-type-traits, ros-galactic-ros-workspace
+Homepage: http://wiki.ros.org/ecl_statistics
+Standards-Version: 3.9.2
+
+Package: ros-galactic-ecl-statistics
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-galactic-ecl-build, ros-galactic-ecl-config, ros-galactic-ecl-license, ros-galactic-ecl-linear-algebra, ros-galactic-ecl-mpl, ros-galactic-ecl-type-traits, ros-galactic-ros-workspace
+Description: Common statistical structures and algorithms for control systems.
