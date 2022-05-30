@@ -1,0 +1,13 @@
+Source: ros-galactic-ecl-core-apps
+Section: misc
+Priority: optional
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-galactic-ament-cmake-ros, ros-galactic-ecl-build, ros-galactic-ecl-command-line, ros-galactic-ecl-config, ros-galactic-ecl-containers, ros-galactic-ecl-converters, ros-galactic-ecl-devices, ros-galactic-ecl-errors, ros-galactic-ecl-exceptions, ros-galactic-ecl-formatters, ros-galactic-ecl-geometry, ros-galactic-ecl-ipc, ros-galactic-ecl-license, ros-galactic-ecl-linear-algebra, ros-galactic-ecl-sigslots, ros-galactic-ecl-streams, ros-galactic-ecl-threads, ros-galactic-ecl-time-lite, ros-galactic-ecl-type-traits, ros-galactic-ros-workspace
+Homepage: http://wiki.ros.org/ecl_core_apps
+Standards-Version: 3.9.2
+
+Package: ros-galactic-ecl-core-apps
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-galactic-ecl-build, ros-galactic-ecl-command-line, ros-galactic-ecl-config, ros-galactic-ecl-containers, ros-galactic-ecl-converters, ros-galactic-ecl-devices, ros-galactic-ecl-errors, ros-galactic-ecl-exceptions, ros-galactic-ecl-formatters, ros-galactic-ecl-geometry, ros-galactic-ecl-ipc, ros-galactic-ecl-license, ros-galactic-ecl-linear-algebra, ros-galactic-ecl-sigslots, ros-galactic-ecl-streams, ros-galactic-ecl-threads, ros-galactic-ecl-time-lite, ros-galactic-ecl-type-traits, ros-galactic-ros-workspace
+Description: This includes a suite of programs demo'ing various aspects of the ecl_core.
+ It also includes various benchmarking and utility programs for use primarily with embedded systems.
