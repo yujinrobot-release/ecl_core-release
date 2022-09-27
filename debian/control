@@ -1,0 +1,12 @@
+Source: ros-rolling-ecl-math
+Section: misc
+Priority: optional
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-rolling-ament-cmake-gtest <!nocheck>, ros-rolling-ament-cmake-ros, ros-rolling-ament-lint-auto <!nocheck>, ros-rolling-ament-lint-common <!nocheck>, ros-rolling-ecl-build, ros-rolling-ecl-license, ros-rolling-ecl-type-traits, ros-rolling-ros-workspace
+Homepage: http://wiki.ros.org/ecl_math
+Standards-Version: 3.9.2
+
+Package: ros-rolling-ecl-math
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-rolling-ecl-license, ros-rolling-ecl-type-traits, ros-rolling-ros-workspace
+Description: This package provides simple support to cmath, filling in holes or redefining in a c++ formulation where desirable.
