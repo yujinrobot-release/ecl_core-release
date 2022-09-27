@@ -1,0 +1,12 @@
+Source: ros-rolling-ecl-eigen
+Section: misc
+Priority: optional
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), libeigen3-dev, ros-rolling-ament-cmake-ros, ros-rolling-ros-workspace
+Homepage: http://wiki.ros.org/ecl_eigen
+Standards-Version: 3.9.2
+
+Package: ros-rolling-ecl-eigen
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libeigen3-dev, ros-rolling-ros-workspace
+Description: This provides an Eigen implementation for ecl's linear algebra.
