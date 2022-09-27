@@ -1,0 +1,13 @@
+Source: ros-rolling-ecl-time
+Section: misc
+Priority: optional
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-rolling-ament-cmake-gtest <!nocheck>, ros-rolling-ament-cmake-ros, ros-rolling-ament-lint-auto <!nocheck>, ros-rolling-ament-lint-common <!nocheck>, ros-rolling-ecl-build, ros-rolling-ecl-config, ros-rolling-ecl-errors, ros-rolling-ecl-exceptions, ros-rolling-ecl-license, ros-rolling-ecl-time-lite, ros-rolling-ros-workspace
+Homepage: http://wiki.ros.org/ecl_time
+Standards-Version: 3.9.2
+
+Package: ros-rolling-ecl-time
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-rolling-ecl-build, ros-rolling-ecl-config, ros-rolling-ecl-errors, ros-rolling-ecl-exceptions, ros-rolling-ecl-license, ros-rolling-ecl-time-lite, ros-rolling-ros-workspace
+Description: Timing utilities are very dependent on the system api provided for their use.
+ This package provides a means for handling different timing models. Current support - posix rt : complete. - macosx : posix timers only, missing absolute timers. - win : none.
