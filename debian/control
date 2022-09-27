@@ -1,0 +1,13 @@
+Source: ros-rolling-ecl-core-apps
+Section: misc
+Priority: optional
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-rolling-ament-cmake-ros, ros-rolling-ecl-build, ros-rolling-ecl-command-line, ros-rolling-ecl-config, ros-rolling-ecl-containers, ros-rolling-ecl-converters, ros-rolling-ecl-devices, ros-rolling-ecl-errors, ros-rolling-ecl-exceptions, ros-rolling-ecl-formatters, ros-rolling-ecl-geometry, ros-rolling-ecl-ipc, ros-rolling-ecl-license, ros-rolling-ecl-linear-algebra, ros-rolling-ecl-sigslots, ros-rolling-ecl-streams, ros-rolling-ecl-threads, ros-rolling-ecl-time-lite, ros-rolling-ecl-type-traits, ros-rolling-ros-workspace
+Homepage: http://wiki.ros.org/ecl_core_apps
+Standards-Version: 3.9.2
+
+Package: ros-rolling-ecl-core-apps
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-rolling-ecl-build, ros-rolling-ecl-command-line, ros-rolling-ecl-config, ros-rolling-ecl-containers, ros-rolling-ecl-converters, ros-rolling-ecl-devices, ros-rolling-ecl-errors, ros-rolling-ecl-exceptions, ros-rolling-ecl-formatters, ros-rolling-ecl-geometry, ros-rolling-ecl-ipc, ros-rolling-ecl-license, ros-rolling-ecl-linear-algebra, ros-rolling-ecl-sigslots, ros-rolling-ecl-streams, ros-rolling-ecl-threads, ros-rolling-ecl-time-lite, ros-rolling-ecl-type-traits, ros-rolling-ros-workspace
+Description: This includes a suite of programs demo'ing various aspects of the ecl_core.
+ It also includes various benchmarking and utility programs for use primarily with embedded systems.
