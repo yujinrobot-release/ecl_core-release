@@ -1,0 +1,12 @@
+Source: ros-rolling-ecl-linear-algebra
+Section: misc
+Priority: optional
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-rolling-ament-cmake-gtest <!nocheck>, ros-rolling-ament-cmake-ros, ros-rolling-ament-lint-auto <!nocheck>, ros-rolling-ament-lint-common <!nocheck>, ros-rolling-ecl-build, ros-rolling-ecl-converters, ros-rolling-ecl-eigen, ros-rolling-ecl-exceptions, ros-rolling-ecl-formatters, ros-rolling-ecl-license, ros-rolling-ecl-math, ros-rolling-sophus, ros-rolling-ros-workspace
+Homepage: http://wiki.ros.org/ecl_linear_algebra
+Standards-Version: 3.9.2
+
+Package: ros-rolling-ecl-linear-algebra
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-rolling-ecl-build, ros-rolling-ecl-converters, ros-rolling-ecl-eigen, ros-rolling-ecl-exceptions, ros-rolling-ecl-formatters, ros-rolling-ecl-license, ros-rolling-ecl-math, ros-rolling-sophus, ros-rolling-ros-workspace
+Description: Ecl frontend to a linear matrix package (currently eigen).
