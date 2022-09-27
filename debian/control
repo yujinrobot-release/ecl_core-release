@@ -1,0 +1,12 @@
+Source: ros-rolling-ecl-devices
+Section: misc
+Priority: optional
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-rolling-ament-cmake-gtest <!nocheck>, ros-rolling-ament-cmake-ros, ros-rolling-ament-lint-auto <!nocheck>, ros-rolling-ament-lint-common <!nocheck>, ros-rolling-ecl-build, ros-rolling-ecl-config, ros-rolling-ecl-containers, ros-rolling-ecl-errors, ros-rolling-ecl-license, ros-rolling-ecl-mpl, ros-rolling-ecl-threads, ros-rolling-ecl-type-traits, ros-rolling-ecl-utilities, ros-rolling-ros-workspace
+Homepage: http://wiki.ros.org/ecl_devices
+Standards-Version: 3.9.2
+
+Package: ros-rolling-ecl-devices
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-rolling-ecl-config, ros-rolling-ecl-containers, ros-rolling-ecl-errors, ros-rolling-ecl-license, ros-rolling-ecl-mpl, ros-rolling-ecl-threads, ros-rolling-ecl-type-traits, ros-rolling-ecl-utilities, ros-rolling-ros-workspace
+Description: Provides an extensible and standardised framework for input-output devices.
